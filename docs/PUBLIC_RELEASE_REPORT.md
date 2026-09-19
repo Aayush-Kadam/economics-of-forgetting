@@ -42,11 +42,11 @@ Published with the working-paper PDF attached.
 
 ## ZENODO STATUS
 
-Not deposited unless a usable authenticated Zenodo session is available after the GitHub release.
+Not deposited — no authenticated Zenodo session was available. The repository includes validated deposit metadata in `release/ZENODO_METADATA_DRAFT.json` for a later author-controlled deposit.
 
 ## DOI
 
-Not assigned at the time of the GitHub release.
+Not assigned; Zenodo deposit requires an authenticated author session.
 
 ## SSRN STATUS
 
