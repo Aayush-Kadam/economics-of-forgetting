@@ -1,0 +1,290 @@
+{
+  "mechanisms": [
+    {
+      "mechanism": "constant",
+      "phi_clean": 0.85,
+      "phi_adverse": 0.85,
+      "phi_rehab": 0.85,
+      "streak": 1,
+      "welfare": -0.28110437239112857,
+      "value_over_fixed": 0.0,
+      "misconduct": 0.4999267758932214,
+      "repeat_misconduct": 0.0,
+      "effort": 1.6256682723301357,
+      "quality": 2.211718761959975,
+      "prediction_mse": 0.06764352497576172
+    },
+    {
+      "mechanism": "earned",
+      "phi_clean": 0.85,
+      "phi_adverse": 0.85,
+      "phi_rehab": 0.85,
+      "streak": 1,
+      "welfare": -0.28110437239112857,
+      "value_over_fixed": 0.0,
+      "misconduct": 0.4999267758932214,
+      "repeat_misconduct": 0.0,
+      "effort": 1.6256682723301357,
+      "quality": 2.211718761959975,
+      "prediction_mse": 0.06764352497576172
+    },
+    {
+      "mechanism": "lifecycle",
+      "phi_clean": 0.0,
+      "phi_adverse": 0.85,
+      "phi_rehab": 0.85,
+      "streak": 1,
+      "welfare": -0.26520906159656527,
+      "value_over_fixed": 0.0158953107945633,
+      "misconduct": 0.4999267758932214,
+      "repeat_misconduct": 0.0,
+      "effort": 1.6256682723301357,
+      "quality": 2.211718761959975,
+      "prediction_mse": 0.061665855285130036
+    }
+  ],
+  "robustness": [
+    {
+      "alpha": 0,
+      "misconduct_harm": 0,
+      "value_of_adaptation": 0.0,
+      "phi_clean": 0.0,
+      "phi_adverse": 0.0,
+      "phi_rehab": 0.0,
+      "streak": 1
+    },
+    {
+      "alpha": 0,
+      "misconduct_harm": 0.6,
+      "value_of_adaptation": 0.0,
+      "phi_clean": 0.0,
+      "phi_adverse": 0.0,
+      "phi_rehab": 0.0,
+      "streak": 1
+    },
+    {
+      "alpha": 0,
+      "misconduct_harm": 1.2,
+      "value_of_adaptation": 0.08019990800906457,
+      "phi_clean": 0.0,
+      "phi_adverse": 0.99,
+      "phi_rehab": 0.0,
+      "streak": 1
+    },
+    {
+      "alpha": 0,
+      "misconduct_harm": 2.4,
+      "value_of_adaptation": 0.3476003228898378,
+      "phi_clean": 0.0,
+      "phi_adverse": 0.99,
+      "phi_rehab": 0.0,
+      "streak": 1
+    },
+    {
+      "alpha": 0.3,
+      "misconduct_harm": 0,
+      "value_of_adaptation": 0.026320552012001966,
+      "phi_clean": 0.0,
+      "phi_adverse": 0.85,
+      "phi_rehab": 0.0,
+      "streak": 1
+    },
+    {
+      "alpha": 0.3,
+      "misconduct_harm": 0.6,
+      "value_of_adaptation": 0.06246797614057725,
+      "phi_clean": 0.0,
+      "phi_adverse": 0.99,
+      "phi_rehab": 0.0,
+      "streak": 1
+    },
+    {
+      "alpha": 0.3,
+      "misconduct_harm": 1.2,
+      "value_of_adaptation": 0.19321975737816038,
+      "phi_clean": 0.0,
+      "phi_adverse": 0.99,
+      "phi_rehab": 0.0,
+      "streak": 1
+    },
+    {
+      "alpha": 0.3,
+      "misconduct_harm": 2.4,
+      "value_of_adaptation": 0.43646331520690507,
+      "phi_clean": 0.0,
+      "phi_adverse": 0.99,
+      "phi_rehab": 0.0,
+      "streak": 1
+    },
+    {
+      "alpha": 0.55,
+      "misconduct_harm": 0,
+      "value_of_adaptation": 0.0,
+      "phi_clean": 0.0,
+      "phi_adverse": 0.0,
+      "phi_rehab": 0.0,
+      "streak": 3
+    },
+    {
+      "alpha": 0.55,
+      "misconduct_harm": 0.6,
+      "value_of_adaptation": 0.0009968190222261475,
+      "phi_clean": 0.45,
+      "phi_adverse": 0.0,
+      "phi_rehab": 0.0,
+      "streak": 3
+    },
+    {
+      "alpha": 0.55,
+      "misconduct_harm": 1.2,
+      "value_of_adaptation": 0.0158953107945633,
+      "phi_clean": 0.0,
+      "phi_adverse": 0.85,
+      "phi_rehab": 0.85,
+      "streak": 1
+    },
+    {
+      "alpha": 0.55,
+      "misconduct_harm": 2.4,
+      "value_of_adaptation": 0.12609611803030352,
+      "phi_clean": 0.0,
+      "phi_adverse": 0.99,
+      "phi_rehab": 0.0,
+      "streak": 1
+    },
+    {
+      "alpha": 0.8,
+      "misconduct_harm": 0,
+      "value_of_adaptation": 0.0,
+      "phi_clean": 0.0,
+      "phi_adverse": 0.0,
+      "phi_rehab": 0.0,
+      "streak": 3
+    },
+    {
+      "alpha": 0.8,
+      "misconduct_harm": 0.6,
+      "value_of_adaptation": 0.0030222297504753914,
+      "phi_clean": 0.8,
+      "phi_adverse": 0.0,
+      "phi_rehab": 0.0,
+      "streak": 3
+    },
+    {
+      "alpha": 0.8,
+      "misconduct_harm": 1.2,
+      "value_of_adaptation": 0.0030222297504756135,
+      "phi_clean": 0.8,
+      "phi_adverse": 0.0,
+      "phi_rehab": 0.0,
+      "streak": 3
+    },
+    {
+      "alpha": 0.8,
+      "misconduct_harm": 2.4,
+      "value_of_adaptation": 0.0030222297504753914,
+      "phi_clean": 0.8,
+      "phi_adverse": 0.0,
+      "phi_rehab": 0.0,
+      "streak": 3
+    }
+  ],
+  "placebos": [
+    {
+      "placebo": "baseline",
+      "welfare": -0.26520906159656527,
+      "discounted_effort": 1.6256682723301357,
+      "misconduct_events": 0.4999267758932214,
+      "repeat_misconduct": 0.0,
+      "prediction_mse": 0.061665855285130036
+    },
+    {
+      "placebo": "alpha_zero",
+      "welfare": -0.6408721000456213,
+      "discounted_effort": 0.0,
+      "misconduct_events": 0.4999267758932214,
+      "repeat_misconduct": 0.0,
+      "prediction_mse": 0.0393732486267432
+    },
+    {
+      "placebo": "no_misconduct",
+      "welfare": 0.344082010076126,
+      "discounted_effort": 1.240866548046875,
+      "misconduct_events": 0.0,
+      "repeat_misconduct": 0.0,
+      "prediction_mse": 0.05034105207054788
+    },
+    {
+      "placebo": "effort_independent",
+      "welfare": -0.6408721000456213,
+      "discounted_effort": 0.0,
+      "misconduct_events": 0.4999267758932214,
+      "repeat_misconduct": 0.0,
+      "prediction_mse": 0.0393732486267432
+    },
+    {
+      "placebo": "no_repeat_misconduct",
+      "welfare": -0.26520906159656527,
+      "discounted_effort": 1.6256682723301357,
+      "misconduct_events": 0.4999267758932214,
+      "repeat_misconduct": 0.0,
+      "prediction_mse": 0.061665855285130036
+    }
+  ],
+  "raw_optima": {
+    "constant": {
+      "welfare": -0.28110437239112857,
+      "productive_surplus": 1.3743537006681208,
+      "misallocation_loss": -0.6256443934482958,
+      "effort_cost": -0.4386862224776234,
+      "misconduct_harm": -0.5911274571333301,
+      "discounted_effort": 1.6256682723301357,
+      "discounted_quality": 2.211718761959975,
+      "prediction_mse": 0.06764352497576172,
+      "misconduct_events": 0.4999267758932214,
+      "repeat_misconduct": 0.0,
+      "parameters": {
+        "phi_clean": 0.85,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      }
+    },
+    "earned": {
+      "welfare": -0.28110437239112857,
+      "productive_surplus": 1.3743537006681208,
+      "misallocation_loss": -0.6256443934482958,
+      "effort_cost": -0.4386862224776234,
+      "misconduct_harm": -0.5911274571333301,
+      "discounted_effort": 1.6256682723301357,
+      "discounted_quality": 2.211718761959975,
+      "prediction_mse": 0.06764352497576172,
+      "misconduct_events": 0.4999267758932214,
+      "repeat_misconduct": 0.0,
+      "parameters": {
+        "phi_clean": 0.85,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      }
+    },
+    "lifecycle": {
+      "welfare": -0.26520906159656527,
+      "productive_surplus": 1.3512092770942639,
+      "misallocation_loss": -0.5866046590798756,
+      "effort_cost": -0.4386862224776234,
+      "misconduct_harm": -0.5911274571333301,
+      "discounted_effort": 1.6256682723301357,
+      "discounted_quality": 2.211718761959975,
+      "prediction_mse": 0.061665855285130036,
+      "misconduct_events": 0.4999267758932214,
+      "repeat_misconduct": 0.0,
+      "parameters": {
+        "phi_clean": 0.0,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      }
+    }
+  }
+}

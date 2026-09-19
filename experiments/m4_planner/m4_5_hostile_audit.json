@@ -1,0 +1,810 @@
+{
+  "boundary_decomposition": {
+    "welfare": -0.15621121334732369,
+    "productive_surplus": -0.14574998919321125,
+    "misallocation_loss": -0.08663028518925975,
+    "effort_cost": 0.07616906103514731,
+    "misconduct_harm": 0.0,
+    "rows": [
+      {
+        "phi": 0.0,
+        "half_life": 0.0,
+        "welfare": 0.6054473023465841,
+        "productive_surplus": 2.6039966401513115,
+        "misallocation_loss": -0.7084935519857822,
+        "effort_cost": -0.7160557858189452,
+        "misconduct_harm": -0.574,
+        "misconduct_rate": 0.9566666666666667,
+        "discounted_adverse_effort": 1.772271967578125,
+        "prediction_mse": 0.03623656546006573
+      },
+      {
+        "phi": 0.001,
+        "half_life": 0.10034333188799373,
+        "welfare": 0.6052186041703201,
+        "productive_surplus": 2.603853487831465,
+        "misallocation_loss": -0.7085790978421996,
+        "effort_cost": -0.7160557858189452,
+        "misconduct_harm": -0.574,
+        "misconduct_rate": 0.9566666666666667,
+        "discounted_adverse_effort": 1.772271967578125,
+        "prediction_mse": 0.036251086144994824
+      },
+      {
+        "phi": 0.005,
+        "half_life": 0.13082402064781276,
+        "welfare": 0.6042956616984003,
+        "productive_surplus": 2.603275126581893,
+        "misallocation_loss": -0.7089236790645475,
+        "effort_cost": -0.7160557858189452,
+        "misconduct_harm": -0.574,
+        "misconduct_rate": 0.9566666666666667,
+        "discounted_adverse_effort": 1.772271967578125,
+        "prediction_mse": 0.03631000185307142
+      },
+      {
+        "phi": 0.01,
+        "half_life": 0.1505149978319906,
+        "welfare": 0.6038851902131108,
+        "productive_surplus": 2.6025391402593794,
+        "misallocation_loss": -0.7093598548376748,
+        "effort_cost": -0.7152940952085938,
+        "misconduct_harm": -0.574,
+        "misconduct_rate": 0.9566666666666667,
+        "discounted_adverse_effort": 1.77130474140625,
+        "prediction_mse": 0.03638371699376411
+      }
+    ]
+  },
+  "regime_transition_table": [
+    {
+      "regime": "short_baseline",
+      "parameters": {
+        "horizon": 6,
+        "beta": 0.95,
+        "rho": 0.55,
+        "alpha": 0.55,
+        "kappa": 1.2,
+        "opportunity_value": 2.0,
+        "output_value": 1.6,
+        "bad_match_cost": 0.8,
+        "misconduct_harm": 1.2,
+        "detection_probability": 0.65,
+        "private_benefit_max": 1.5,
+        "bad_record": 0.05,
+        "threshold": 0.5,
+        "good_signal": 0.85,
+        "logistic_slope": 6.0,
+        "opportunity": "logistic",
+        "effort_grid_size": 401,
+        "direct_penalty": 0.0
+      },
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "prediction_phi": 0.0,
+      "fixed_behavior_phi": 0.0,
+      "local_maxima": 5
+    },
+    {
+      "regime": "intermediate_high_cost",
+      "parameters": {
+        "horizon": 6,
+        "beta": 0.95,
+        "rho": 0.55,
+        "alpha": 0.55,
+        "kappa": 3.0,
+        "opportunity_value": 2.0,
+        "output_value": 1.6,
+        "bad_match_cost": 0.8,
+        "misconduct_harm": 1.2,
+        "detection_probability": 0.65,
+        "private_benefit_max": 1.5,
+        "bad_record": 0.05,
+        "threshold": 0.5,
+        "good_signal": 0.85,
+        "logistic_slope": 6.0,
+        "opportunity": "logistic",
+        "effort_grid_size": 401,
+        "direct_penalty": 0.0
+      },
+      "phi_star": 0.43782750000000004,
+      "half_life_star": 0.8392320705966846,
+      "prediction_phi": 0.0,
+      "fixed_behavior_phi": 0.0,
+      "local_maxima": 23
+    },
+    {
+      "regime": "long_zero_rho",
+      "parameters": {
+        "horizon": 6,
+        "beta": 0.95,
+        "rho": 0.0,
+        "alpha": 0.55,
+        "kappa": 1.2,
+        "opportunity_value": 2.0,
+        "output_value": 1.6,
+        "bad_match_cost": 0.8,
+        "misconduct_harm": 1.2,
+        "detection_probability": 0.65,
+        "private_benefit_max": 1.5,
+        "bad_record": 0.05,
+        "threshold": 0.5,
+        "good_signal": 0.85,
+        "logistic_slope": 6.0,
+        "opportunity": "logistic",
+        "effort_grid_size": 401,
+        "direct_penalty": 0.0
+      },
+      "phi_star": 0.7897725,
+      "half_life_star": 2.9369355263772823,
+      "prediction_phi": 0.0,
+      "fixed_behavior_phi": 0.0,
+      "local_maxima": 33
+    },
+    {
+      "regime": "near_permanent_short_horizon",
+      "parameters": {
+        "horizon": 2,
+        "beta": 0.95,
+        "rho": 0.55,
+        "alpha": 0.55,
+        "kappa": 1.2,
+        "opportunity_value": 2.0,
+        "output_value": 1.6,
+        "bad_match_cost": 0.8,
+        "misconduct_harm": 1.2,
+        "detection_probability": 0.65,
+        "private_benefit_max": 1.5,
+        "bad_record": 0.05,
+        "threshold": 0.5,
+        "good_signal": 0.85,
+        "logistic_slope": 6.0,
+        "opportunity": "logistic",
+        "effort_grid_size": 401,
+        "direct_penalty": 0.0
+      },
+      "phi_star": 0.9947475,
+      "half_life_star": 131.61831603785095,
+      "prediction_phi": 0.0,
+      "fixed_behavior_phi": 0.9945112500000001,
+      "local_maxima": 17
+    }
+  ],
+  "state_specific_margins": [
+    {
+      "state": "clean_high_safe",
+      "quality": 0.85,
+      "reputation": 0.85,
+      "adverse": false,
+      "local_slope_at_zero": 0.09544682710154184,
+      "phi_star": 0.4376625,
+      "half_life_star": 0.8388492429596415,
+      "welfare_star": -0.02385617973333609
+    },
+    {
+      "state": "clean_low_false_positive",
+      "quality": 0.25,
+      "reputation": 0.75,
+      "adverse": false,
+      "local_slope_at_zero": -0.18033915460018424,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare_star": -1.4968307944364354
+    },
+    {
+      "state": "recent_adverse_high_quality",
+      "quality": 0.75,
+      "reputation": 0.1,
+      "adverse": true,
+      "local_slope_at_zero": -0.4373629541521762,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare_star": 2.4820582065962222
+    },
+    {
+      "state": "recent_adverse_low_quality",
+      "quality": 0.25,
+      "reputation": 0.1,
+      "adverse": true,
+      "local_slope_at_zero": -0.435627786533499,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare_star": 1.646129021472332
+    },
+    {
+      "state": "intermediate_recovery",
+      "quality": 0.55,
+      "reputation": 0.45,
+      "adverse": true,
+      "local_slope_at_zero": -0.13774135606912097,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare_star": 2.335334435628311
+    },
+    {
+      "state": "credible_rehabilitation",
+      "quality": 0.8,
+      "reputation": 0.55,
+      "adverse": true,
+      "local_slope_at_zero": -0.04209181570917764,
+      "phi_star": 0.004743749999999988,
+      "half_life_star": 0.12953776785213966,
+      "welfare_star": 3.109136308758064
+    },
+    {
+      "state": "very_low_reputation",
+      "quality": 0.45,
+      "reputation": -0.1,
+      "adverse": true,
+      "local_slope_at_zero": -0.641962167508936,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare_star": 1.9780739262263833
+    },
+    {
+      "state": "old_adverse_near_threshold",
+      "quality": 0.65,
+      "reputation": 0.48,
+      "adverse": true,
+      "local_slope_at_zero": -0.10889329521215352,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare_star": 2.6131901425721775
+    }
+  ],
+  "multiple_local_maxima_audit": {
+    "parameters": {
+      "horizon": 8,
+      "beta": 0.8450002737935648,
+      "rho": 0.10634435959378695,
+      "alpha": 0.8317251486848815,
+      "kappa": 1.7156470768058867,
+      "opportunity_value": 2.0,
+      "output_value": 2.388810631514426,
+      "bad_match_cost": 0.2564411675340818,
+      "misconduct_harm": 1.7518568709732256,
+      "detection_probability": 0.65,
+      "private_benefit_max": 1.5,
+      "bad_record": 0.05,
+      "threshold": 0.5,
+      "good_signal": 0.85,
+      "logistic_slope": 6.0,
+      "opportunity": "linear",
+      "effort_grid_size": 501,
+      "direct_penalty": 0.0
+    },
+    "audits": [
+      {
+        "effort_grid": 101,
+        "kappa_scale": 0.98,
+        "global_phi": 0.96028875,
+        "global_welfare": 0.07688743759802462,
+        "material_peak_count": 41,
+        "material_peaks": [
+          {
+            "phi": 0.15109875,
+            "welfare": -0.24519606077872533,
+            "prominence": 0.0007040926568875616
+          },
+          {
+            "phi": 0.24725250000000001,
+            "welfare": -0.24737986680043172,
+            "prominence": 0.0001011226502409257
+          },
+          {
+            "phi": 0.27097875,
+            "welfare": -0.24758311136388697,
+            "prominence": 0.0001085798829408291
+          },
+          {
+            "phi": 0.294705,
+            "welfare": -0.24845845520808563,
+            "prominence": 0.00011542761680033431
+          },
+          {
+            "phi": 0.31843125,
+            "welfare": -0.24885384365647895,
+            "prominence": 0.00012396654480961722
+          },
+          {
+            "phi": 0.3421575,
+            "welfare": -0.24992220496304052,
+            "prominence": 0.0001320264993684983
+          },
+          {
+            "phi": 0.36713250000000003,
+            "welfare": -0.25150134006366454,
+            "prominence": 0.0006150227347619386
+          },
+          {
+            "phi": 0.39085875000000003,
+            "welfare": -0.25277854085367235,
+            "prominence": 0.0001507917836822692
+          },
+          {
+            "phi": 0.41458500000000004,
+            "welfare": -0.2552881678198244,
+            "prominence": 0.00016037678273406186
+          },
+          {
+            "phi": 0.43831125000000004,
+            "welfare": -0.15769304455555974,
+            "prominence": 0.0007223432167458854
+          }
+        ]
+      },
+      {
+        "effort_grid": 101,
+        "kappa_scale": 1.0,
+        "global_phi": 0.9615375,
+        "global_welfare": 0.07575669451755371,
+        "material_peak_count": 38,
+        "material_peaks": [
+          {
+            "phi": 0.25599375,
+            "welfare": -0.24941517379452788,
+            "prominence": 0.00010270071160056737
+          },
+          {
+            "phi": 0.28096875000000004,
+            "welfare": -0.24969948969358974,
+            "prominence": 0.00011074789933218643
+          },
+          {
+            "phi": 0.304695,
+            "welfare": -0.2514960402211309,
+            "prominence": 0.0006938992234593044
+          },
+          {
+            "phi": 0.32967,
+            "welfare": -0.25309460659117927,
+            "prominence": 0.00012555865188712545
+          },
+          {
+            "phi": 0.35339625,
+            "welfare": -0.2541723951127418,
+            "prominence": 0.00013387508695383854
+          },
+          {
+            "phi": 0.37837125000000005,
+            "welfare": -0.25488532317469703,
+            "prominence": 0.00014448106404213457
+          },
+          {
+            "phi": 0.40209750000000005,
+            "welfare": -0.2570567655973268,
+            "prominence": 0.00015328674555714628
+          },
+          {
+            "phi": 0.4270725,
+            "welfare": -0.2585623884583441,
+            "prominence": 0.0001646241357259326
+          },
+          {
+            "phi": 0.43831125000000004,
+            "welfare": -0.15988541043108923,
+            "prominence": 0.0001704765816060161
+          },
+          {
+            "phi": 0.47577375000000005,
+            "welfare": -0.1668343476404535,
+            "prominence": 0.00018969314807393278
+          }
+        ]
+      },
+      {
+        "effort_grid": 101,
+        "kappa_scale": 1.02,
+        "global_phi": 0.9615375,
+        "global_welfare": 0.07570510555397206,
+        "material_peak_count": 40,
+        "material_peaks": [
+          {
+            "phi": 0.26598375,
+            "welfare": -0.2585535993811968,
+            "prominence": 0.0006555491414120262
+          },
+          {
+            "phi": 0.29095875000000004,
+            "welfare": -0.2594276479224898,
+            "prominence": 0.00011369228567170708
+          },
+          {
+            "phi": 0.31593375,
+            "welfare": -0.25986384883117825,
+            "prominence": 0.0006624080209536864
+          },
+          {
+            "phi": 0.34090875000000004,
+            "welfare": -0.26094926159154813,
+            "prominence": 0.0001310937797124323
+          },
+          {
+            "phi": 0.36588375,
+            "welfare": -0.2630059911013567,
+            "prominence": 0.00013938015787351432
+          },
+          {
+            "phi": 0.39085875000000003,
+            "welfare": -0.26378944356900075,
+            "prominence": 0.0001504420488588898
+          },
+          {
+            "phi": 0.41583375,
+            "welfare": -0.2652380422801435,
+            "prominence": 0.0005522507284720923
+          },
+          {
+            "phi": 0.44080875,
+            "welfare": -0.1692865146782465,
+            "prominence": 0.00017171021415657295
+          },
+          {
+            "phi": 0.46578375000000005,
+            "welfare": -0.17048677222392233,
+            "prominence": 0.00048638866753375476
+          },
+          {
+            "phi": 0.49075875,
+            "welfare": -0.17319602258049255,
+            "prominence": 0.00019894470915471363
+          }
+        ]
+      },
+      {
+        "effort_grid": 401,
+        "kappa_scale": 0.98,
+        "global_phi": 0.9615375,
+        "global_welfare": 0.07539380456754058,
+        "material_peak_count": 42,
+        "material_peaks": [
+          {
+            "phi": 0.1123875,
+            "welfare": -0.2457056048662607,
+            "prominence": 0.0002052491401348111
+          },
+          {
+            "phi": 0.20229750000000002,
+            "welfare": -0.2460208028048738,
+            "prominence": 0.00017096185630552374
+          },
+          {
+            "phi": 0.23226750000000002,
+            "welfare": -0.2463894295699549,
+            "prominence": 0.00015898780673634372
+          },
+          {
+            "phi": 0.24350625,
+            "welfare": -0.24657313686282128,
+            "prominence": 0.00010099088289017288
+          },
+          {
+            "phi": 0.25599375,
+            "welfare": -0.2473528573798663,
+            "prominence": 0.00010419970725827898
+          },
+          {
+            "phi": 0.2622375,
+            "welfare": -0.24741521760936458,
+            "prominence": 0.0001468194984418636
+          },
+          {
+            "phi": 0.26848125,
+            "welfare": -0.24762977130523023,
+            "prominence": 0.00010787230588504837
+          },
+          {
+            "phi": 0.27347625000000003,
+            "welfare": -0.2476499528113269,
+            "prominence": 0.00010949475924521002
+          },
+          {
+            "phi": 0.27972,
+            "welfare": -0.24787548013902455,
+            "prominence": 0.00011127315660702797
+          },
+          {
+            "phi": 0.28596375,
+            "welfare": -0.24796209066788272,
+            "prominence": 0.00011337081177920094
+          }
+        ]
+      },
+      {
+        "effort_grid": 401,
+        "kappa_scale": 1.0,
+        "global_phi": 0.9615375,
+        "global_welfare": 0.07381269727992715,
+        "material_peak_count": 46,
+        "material_peaks": [
+          {
+            "phi": 0.0824175,
+            "welfare": -0.2507414295888336,
+            "prominence": 0.00021669584976991008
+          },
+          {
+            "phi": 0.11863125000000001,
+            "welfare": -0.25040983729943844,
+            "prominence": 0.0002032428773170447
+          },
+          {
+            "phi": 0.16108875,
+            "welfare": -0.25036328202638214,
+            "prominence": 0.00018717543664403813
+          },
+          {
+            "phi": 0.16733250000000002,
+            "welfare": -0.25057601925907175,
+            "prominence": 0.00018485235499748898
+          },
+          {
+            "phi": 0.21603375000000002,
+            "welfare": -0.2509633017874902,
+            "prominence": 0.00016576042184979212
+          },
+          {
+            "phi": 0.22227750000000002,
+            "welfare": -0.251323494251971,
+            "prominence": 0.00016325477070727734
+          },
+          {
+            "phi": 0.25349625000000003,
+            "welfare": -0.2523289601821966,
+            "prominence": 0.0001508494660582005
+          },
+          {
+            "phi": 0.25974,
+            "welfare": -0.25252936293379624,
+            "prominence": 0.00010459905245818746
+          },
+          {
+            "phi": 0.264735,
+            "welfare": -0.25254061813838524,
+            "prominence": 0.00010617849354843667
+          },
+          {
+            "phi": 0.27097875,
+            "welfare": -0.2527518891294782,
+            "prominence": 0.00010790882395650403
+          }
+        ]
+      },
+      {
+        "effort_grid": 401,
+        "kappa_scale": 1.02,
+        "global_phi": 0.9615375,
+        "global_welfare": 0.07282217816716753,
+        "material_peak_count": 44,
+        "material_peaks": [
+          {
+            "phi": 0.094905,
+            "welfare": -0.2564108283490362,
+            "prominence": 0.00021228065302181243
+          },
+          {
+            "phi": 0.11988000000000001,
+            "welfare": -0.25627498653407643,
+            "prominence": 0.00020308638614996433
+          },
+          {
+            "phi": 0.12612375,
+            "welfare": -0.2564501049315017,
+            "prominence": 0.00020079222683405673
+          },
+          {
+            "phi": 0.17607375,
+            "welfare": -0.2564468203145483,
+            "prominence": 0.00018178077327846154
+          },
+          {
+            "phi": 0.194805,
+            "welfare": -0.2565664632553626,
+            "prominence": 0.0001744759885361491
+          },
+          {
+            "phi": 0.21353625,
+            "welfare": -0.256734612367877,
+            "prominence": 0.00016704491289365464
+          },
+          {
+            "phi": 0.24475500000000003,
+            "welfare": -0.25740018151349914,
+            "prominence": 0.00015450295895519384
+          },
+          {
+            "phi": 0.25099875,
+            "welfare": -0.25758827438412546,
+            "prominence": 0.00010196565294440241
+          },
+          {
+            "phi": 0.25724250000000004,
+            "welfare": -0.25764361371566114,
+            "prominence": 0.00014936299748502524
+          },
+          {
+            "phi": 0.26348625000000003,
+            "welfare": -0.2581206390763101,
+            "prominence": 0.00010549118083175157
+          }
+        ]
+      },
+      {
+        "effort_grid": 1001,
+        "kappa_scale": 0.98,
+        "global_phi": 0.9615375,
+        "global_welfare": 0.07539879109606507,
+        "material_peak_count": 21,
+        "material_peaks": [
+          {
+            "phi": 0.43831125000000004,
+            "welfare": -0.15800051933201853,
+            "prominence": 0.00011093377596063658
+          },
+          {
+            "phi": 0.6618375000000001,
+            "welfare": -0.11396273526794261,
+            "prominence": 0.0007836942731880847
+          },
+          {
+            "phi": 0.75924,
+            "welfare": -0.0821088946774467,
+            "prominence": 0.0011435365787278162
+          },
+          {
+            "phi": 0.814185,
+            "welfare": -0.05550117036202476,
+            "prominence": 0.0018298566894523194
+          },
+          {
+            "phi": 0.84790125,
+            "welfare": -0.03179450605744586,
+            "prominence": 0.002405923570775244
+          },
+          {
+            "phi": 0.8716275,
+            "welfare": -0.011371303682574326,
+            "prominence": 0.002669659731224159
+          },
+          {
+            "phi": 0.8891100000000001,
+            "welfare": 0.005490729204768922,
+            "prominence": 0.0028265413973838516
+          },
+          {
+            "phi": 0.9028462500000001,
+            "welfare": 0.019729305188002054,
+            "prominence": 0.003367294637616272
+          },
+          {
+            "phi": 0.91283625,
+            "welfare": 0.03236165400647733,
+            "prominence": 0.003806345417103174
+          },
+          {
+            "phi": 0.9215775,
+            "welfare": 0.041717877663160825,
+            "prominence": 0.0034736112746742084
+          }
+        ]
+      },
+      {
+        "effort_grid": 1001,
+        "kappa_scale": 1.0,
+        "global_phi": 0.9615375,
+        "global_welfare": 0.0737300107423246,
+        "material_peak_count": 21,
+        "material_peaks": [
+          {
+            "phi": 0.43831125000000004,
+            "welfare": -0.16310497738873161,
+            "prominence": 0.00024959953541023316
+          },
+          {
+            "phi": 0.6618375000000001,
+            "welfare": -0.11860210196513077,
+            "prominence": 0.0007878834950108965
+          },
+          {
+            "phi": 0.75924,
+            "welfare": -0.08607481658343935,
+            "prominence": 0.0011418919874974925
+          },
+          {
+            "phi": 0.814185,
+            "welfare": -0.05880967043564296,
+            "prominence": 0.0021284642374211765
+          },
+          {
+            "phi": 0.84790125,
+            "welfare": -0.035136868428948434,
+            "prominence": 0.0016821541445454363
+          },
+          {
+            "phi": 0.8716275,
+            "welfare": -0.0143367669690477,
+            "prominence": 0.0025821127029023623
+          },
+          {
+            "phi": 0.8891100000000001,
+            "welfare": 0.0032053219332576106,
+            "prominence": 0.003097271016702227
+          },
+          {
+            "phi": 0.9028462500000001,
+            "welfare": 0.01699782782995065,
+            "prominence": 0.0031924528930403814
+          },
+          {
+            "phi": 0.91283625,
+            "welfare": 0.029698571000356486,
+            "prominence": 0.0028934748389562587
+          },
+          {
+            "phi": 0.9215775,
+            "welfare": 0.03952231166060063,
+            "prominence": 0.003369143034545545
+          }
+        ]
+      },
+      {
+        "effort_grid": 1001,
+        "kappa_scale": 1.02,
+        "global_phi": 0.9615375,
+        "global_welfare": 0.07233765447929116,
+        "material_peak_count": 21,
+        "material_peaks": [
+          {
+            "phi": 0.43831125000000004,
+            "welfare": -0.1681976044951986,
+            "prominence": 0.0002462982192765195
+          },
+          {
+            "phi": 0.6618375000000001,
+            "welfare": -0.1229238223648478,
+            "prominence": 0.000686750569063227
+          },
+          {
+            "phi": 0.75924,
+            "welfare": -0.08966541869938394,
+            "prominence": 0.0013745208326924607
+          },
+          {
+            "phi": 0.814185,
+            "welfare": -0.062211009915042706,
+            "prominence": 0.0018287983077711067
+          },
+          {
+            "phi": 0.84790125,
+            "welfare": -0.03774819045818155,
+            "prominence": 0.0021151038322045276
+          },
+          {
+            "phi": 0.8716275,
+            "welfare": -0.017331568692816487,
+            "prominence": 0.00253523715446188
+          },
+          {
+            "phi": 0.8891100000000001,
+            "welfare": 0.00044085274845321806,
+            "prominence": 0.0028342188338112816
+          },
+          {
+            "phi": 0.9028462500000001,
+            "welfare": 0.014838564179414966,
+            "prominence": 0.003096452325687806
+          },
+          {
+            "phi": 0.91283625,
+            "welfare": 0.02794179097846842,
+            "prominence": 0.003592682976889902
+          },
+          {
+            "phi": 0.9215775,
+            "welfare": 0.037786567263222944,
+            "prominence": 0.0036052154342993206
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Persistent Records and Rehabilitation Incentives"
+message: "Please cite this work using the metadata below."
+type: article
+authors:
+  - family-names: Kadam
+    given-names: Aayush
+date-released: 2026-09-20
+version: 0.1.0
+license: proprietary

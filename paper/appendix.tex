@@ -1,0 +1,153 @@
+\section{Formal Results and Proofs}
+
+Throughout, $R$ is an institutional score rather than a Bayesian posterior. Let $\phi\in[0,1]$ be score persistence, $\rho\in[0,1]$ intrinsic quality persistence, and $\alpha\geq0$ effort productivity.
+
+\subsection{Canonical finite-horizon control problem}
+The state is $s_t=(R_t,x_t,z_t)$, where $z_t\in\{C,A\}$ denotes clean or adverse lifecycle status. In an adverse state the agent chooses $e_t\in[0,1]$ and
+\[
+x_{t+1}=\rho x_t+\alpha e_t+\varepsilon_{t+1},\qquad
+y_{t+1}=x_{t+1}+\eta_{t+1},\qquad
+R_{t+1}=\phi R_t+(1-\phi)y_{t+1}.
+\]
+Given an exogenous increasing opportunity schedule $A(R)$, the adverse-state Bellman equation is
+\[
+V_t^A(R,x)=\max_{e\in[0,1]}\left\{vA(R)-\frac{\kappa e^2}{2}
++\beta\mathbb E[V_{t+1}^A(R',x')]\right\}.
+\]
+In the clean state a private benefit $b$ is compared with the detection-weighted loss from transition to the adverse state. This is a dynamic control problem, not a market equilibrium.
+
+\subsection{Proposition 1: recovery dynamics}
+\textbf{Proposition 1.} If $R_0<\bar R<y_G$ and $0<\phi<1$, then under $R_{t+1}=\phi R_t+(1-\phi)y_G$,
+\[
+R_t=y_G+\phi^t(R_0-y_G),\qquad
+n(\phi)=\frac{\log[(y_G-\bar R)/(y_G-R_0)]}{\log\phi},
+\]
+and $n'(\phi)>0$.
+
+\textit{Proof.} Iteration gives the path. Direct differentiation gives
+$n'(\phi)=-\log q/[\phi(\log\phi)^2]>0$ for $q\in(0,1)$. \qed
+
+\subsection{Proposition 2: binary rehabilitation}
+\textbf{Proposition 2.} Suppose rehabilitation costs $C$, yields value $V$ upon recovery, and $0<\beta<1$. If $C/V$ lies strictly between the endpoint values of $\beta^{n(\phi)}$, a unique threshold $\bar\phi(R_0)$ exists such that rehabilitation occurs below it and not above it.
+
+\textit{Proof.} Proposition 1 and discounting imply that $\beta^{n(\phi)}V$ is continuous and strictly decreasing. Existence and uniqueness follow from the intermediate value theorem. \qed
+
+When $y_G=\rho x+\alpha$, the threshold rises with $\alpha$ and $\beta$ and falls with $C$, wherever the derivatives exist.
+
+\subsection{Proposition 3: continuous rehabilitation}
+Let $m=\phi^T$, $x_1=\rho x+\alpha e$, and $r=mR+(1-m)x_1$. Consider
+\[
+U(e)=\beta^T V A(r)-\kappa e^2/2.
+\]
+\textbf{Proposition 3.} For linear $A(r)=a+br$, an interior optimum satisfies
+\[
+e^*=\frac{\beta^T Vb\alpha(1-\phi^T)}{\kappa},
+\]
+so $e^*$ strictly decreases in $\phi$. For twice differentiable increasing $A$, at a strict interior optimum,
+\[
+\frac{\partial e^*}{\partial\phi}=
+\frac{\beta^T V\alpha T\phi^{T-1}\{-A'(r)+(1-m)A''(r)(R-x_1)\}}
+{\kappa-\beta^T V[\alpha(1-m)]^2A''(r)}.
+\]
+Hence effort falls precisely where the numerator is negative.
+
+\textit{Proof.} The first-order condition is $\beta^TV\alpha(1-m)A'(r)-\kappa e=0$. Differentiate implicitly and use the strict second-order condition. \qed
+
+\subsection{Proposition 4: clean-state deterrence}
+\textbf{Proposition 4.} Let detected misconduct cause recovery delay $n(\phi)$ and loss $P(\phi)=V[1-\beta^{n(\phi)}]$. A clean agent with benefit $b$ commits misconduct iff $b\ge pP(\phi)$. Thus the misconduct threshold rises with $\phi$; for a continuous benefit distribution, misconduct probability weakly falls and falls strictly away from support boundaries.
+
+\textit{Proof.} Proposition 1 gives $P'(\phi)>0$. The remaining claims follow from the threshold rule. \qed
+
+\subsection{Proposition 5: lifecycle asymmetry}
+\textbf{Proposition 5.} There exists a nonempty set of clean and adverse states in which increasing the common score persistence $\phi$ strictly reduces misconduct and strictly reduces productive rehabilitation effort.
+
+\textit{Proof.} Choose a clean state with an interior benefit threshold in Proposition 4. Choose an adverse state with an interior linear-opportunity solution in Proposition 3; both inequalities are strict on open parameter sets. For smooth nonlinear opportunity, replace linearity with the strict regional inequality $-A'(r)+(1-m)A''(r)(R-x_1)<0$ and the strict second-order condition. \qed
+
+\subsection{Proposition 6: record memory without state memory}
+\textbf{Proposition 6.} Set $\rho=0$ and $\alpha>0$. If two public histories induce $e(R^A)\ne e(R^B)$, then identical initial fundamentals generate $x_1^A-x_1^B=\alpha[e(R^A)-e(R^B)]\ne0$.
+
+\textit{Proof.} Substitute $\rho=0$ into the state transition. \qed
+
+\subsection{Proposition 7: minimal behavioral persistence}
+\textbf{Proposition 7.} Following a one-time effort difference and no later effort differences,
+\[
+x_t^A-x_t^B=\rho^{t-1}\alpha(e_0^A-e_0^B),\quad t\ge1.
+\]
+With $\rho=0$ the gap is one-period unless record-dependent effort recurs.
+
+\textit{Proof.} Apply the linear state difference equation recursively. \qed
+
+\section{Institution-Produced Outcome Persistence}
+
+Consider two worlds $A$ and $B$ with common future primitive shocks. Subtracting their quality laws gives
+\[
+\Delta x_{t+1}=\rho\Delta x_t+\alpha\Delta e_t.
+\]
+Iterating establishes the exact finite-horizon decomposition
+\[
+\Delta x_{t+h}=\rho^h\Delta x_t+
+\alpha\sum_{j=0}^{h-1}\rho^{h-1-j}\Delta e_{t+j}.
+\]
+The first term is intrinsic propagation; the second is behaviorally produced propagation. In particular, if current fundamentals match, all later quality divergence is generated by effort differences inside the model.
+
+\subsection{Zero intrinsic persistence}
+
+When $\rho=0$, $\Delta x_{t+h}=\alpha\Delta e_{t+h-1}$. Therefore a one-time effort difference lasts one period, while repeated score-dependent effort differences can generate nonzero quality gaps at every finite horizon. This is a possibility result, not a universal persistence theorem: fixed effort or $\alpha=0$ eliminates the quality gap.
+
+\subsection{Local propagation}
+
+For a differentiable policy $e=e(x,R)$ and state ordering $(x,R)$, the zero-shock transition has Jacobian
+\[
+J_t=\begin{pmatrix}
+\rho+\alpha e_x & \alpha e_R\\
+(1-\phi)(\rho+\alpha e_x) & \phi+(1-\phi)\alpha e_R
+\end{pmatrix}.
+\]
+At matched fundamentals, the one-period effect of a record difference on quality has sign $\operatorname{sign}(\alpha e_R)$. Hence $e_R>0$ defines a locally self-confirming region for a bad record, $e_R<0$ a self-correcting region, and $e_R=0$ a locally flat region. Jacobian roots are finite-horizon propagation diagnostics and are not interpreted as infinite-horizon equilibrium stability conditions.
+
+For the strict-interior one-investment problem in Proposition 3, implicit differentiation with respect to the inherited record gives
+\[
+e_R=\frac{\beta^T V\alpha(1-m)m A''(r)}
+{\kappa-\beta^T V[\alpha(1-m)]^2A''(r)}.
+\]
+Under the strict second-order condition the denominator is positive, so the boundary between self-confirming and self-correcting regions is $A''(r)=0$. For logistic opportunity this is the midpoint $r=\bar R$. Action bounds and nonconcavity create additional flat or discontinuous boundaries.
+
+\section{Secondary Computational Design}
+
+For a finite horizon and population distribution $\mu$, define
+\[
+W(\phi)=\mathbb E_\mu\left[\sum_{t=0}^{T-1}\beta^t
+\left\{q A(R_t)x_t-m A(R_t)(1-x_t)-\frac{\kappa e_t^2}{2}\right\}\right]
+-\omega_C L d(\phi).
+\]
+The first term is real productive surplus, the second is real bad-match loss, the third is effort cost, and the final term is misconduct harm among the clean share $\omega_C$. Opportunity payments are transfers and omitted.
+
+\subsection{Constant-memory benchmark and existence}
+
+\textbf{Proposition.} Let $\phi\in[0,\bar\phi]$ for $\bar\phi<1$. If the primitive transition, opportunity, and payoff functions are continuous and the agent policy is unique and continuous in state and $\phi$, then an optimal constant memory exists.
+
+\textit{Proof.} Finite composition and integration preserve continuity, so $W$ is continuous in $\phi$. The domain is compact; existence follows from Weierstrass. \qed
+
+The uniqueness condition is substantive: action bounds and multiple private optima can kink or discontinuously select policies. The computational planner therefore uses a global grid and reports boundary and multiple-local-optimum cases rather than imposing differentiability or concavity.
+
+\subsection{Designer ordering and counterexamples}
+
+Constructive numerical examples yield both $\phi_{\rm pred}>\phi_{\rm welfare}$ and the reverse, as well as both $\phi_{\rm full}>\phi_{\rm fixed}$ and the reverse. Consequently neither prediction-focused retention nor behavior-ignorant retention has a global directional bias in this finite-horizon model.
+
+\subsection{Lifecycle-contingent persistence}
+
+Let the committed rule be $\Psi=(\phi_C,\phi_A,\phi_G,m)$ for clean, adverse, and favorable-streak states. Constant memory is the restriction $\phi_C=\phi_A=\phi_G$.
+
+\textbf{Proposition.} On a finite common memory-action set, adaptive memory weakly dominates constant memory. If two positive-weight reachable states have different unique maximizing actions, the dominance is strict.
+
+\textit{Proof.} Constant action vectors are feasible adaptive vectors, giving weak dominance. With distinct unique statewise maximizers, no common action attains both statewise maxima; positive weights make the resulting loss strict. \qed
+
+In the calibrated repeated-event model, lifecycle contingency strictly improves welfare, but the restricted earned-forgetting rule collapses to constant memory. This numerical result supports state contingency, not a general theorem favoring accelerated post-rehabilitation forgetting.
+
+\subsection{Finite computational design}
+
+The computational design compares nested finite policy classes on a common memory grid. Weak dominance holds at all 36 predeclared points. Two-state clean/nonclean memory strictly improves on constant memory at 33 points, but the benchmark gain is small and three points show negligible value. Prediction-optimal memory is longer, shorter, or equal to welfare-optimal memory across different design regions. These are deterministic design frequencies rather than population probabilities or empirical estimates.
+
+A proposed memory-conflict index, defined as dispersion in singleton-state local welfare slopes, has near-zero negative correlation with adaptive value and is rejected as an organizing sufficient statistic.
+\subsection{Adversarial robustness and limitations}
+The preregistered bounded battery re-optimizes constant and clean/adverse lifecycle-contingent persistence on a common memory mesh in 61 environments. Nesting holds throughout, but magnitudes range from economically negligible under linear access to large under a hard opportunity threshold. Representative bounded continuous effort solutions differ from a 501-point grid by less than $9.72\times10^{-4}$. The exercises do not establish timing invariance, robustness to stochastic false positives, or global continuous optimality of the memory vector. Accordingly, the computational evidence supports only a regional lifecycle-contingent persistence claim.

@@ -1,0 +1,569 @@
+{
+  "parameters": {
+    "horizon": 6,
+    "beta": 0.95,
+    "rho": 0.55,
+    "alpha": 0.55,
+    "kappa": 1.2,
+    "opportunity_value": 2.0,
+    "output_value": 1.6,
+    "bad_match_cost": 0.8,
+    "misconduct_harm": 1.2,
+    "detection_probability": 0.65,
+    "private_benefit_max": 1.5,
+    "bad_record": 0.05,
+    "threshold": 0.5,
+    "good_signal": 0.85,
+    "logistic_slope": 6.0,
+    "opportunity": "logistic",
+    "effort_grid_size": 401,
+    "direct_penalty": 0.0
+  },
+  "benchmarks": [
+    {
+      "world": "full",
+      "regime": "SHORT",
+      "phi": 0.0,
+      "half_life": 0.0,
+      "welfare": 0.6054473023465841,
+      "productive_surplus": 2.6039966401513115,
+      "misallocation_loss": -0.7084935519857822,
+      "effort_cost": -0.7160557858189452,
+      "misconduct_harm": -0.574,
+      "misconduct_rate": 0.9566666666666667,
+      "discounted_adverse_effort": 1.772271967578125,
+      "prediction_mse": 0.03623656546006573,
+      "local_maxima_count": 5
+    },
+    {
+      "world": "fixed_behavior",
+      "regime": "SHORT",
+      "phi": 0.0,
+      "half_life": 0.0,
+      "welfare": 0.6125692057952828,
+      "productive_surplus": 2.5441606993163712,
+      "misallocation_loss": -0.7210014794013619,
+      "effort_cost": -0.6365900141197265,
+      "misconduct_harm": -0.574,
+      "misconduct_rate": 0.9566666666666667,
+      "discounted_adverse_effort": 1.659121801953125,
+      "prediction_mse": 0.036660055645890734,
+      "local_maxima_count": 2
+    },
+    {
+      "world": "no_rehabilitation",
+      "regime": "SHORT",
+      "phi": 0.0,
+      "half_life": 0.0,
+      "welfare": -0.4937244404601696,
+      "productive_surplus": 0.5881450025850472,
+      "misallocation_loss": -0.5078694430452169,
+      "effort_cost": 0.0,
+      "misconduct_harm": -0.574,
+      "misconduct_rate": 0.9566666666666667,
+      "discounted_adverse_effort": 0.0,
+      "prediction_mse": 0.026129379550769313,
+      "local_maxima_count": 4
+    },
+    {
+      "world": "no_deterrence",
+      "regime": "SHORT",
+      "phi": 0.0,
+      "half_life": 0.0,
+      "welfare": 1.179447302346584,
+      "productive_surplus": 2.6039966401513115,
+      "misallocation_loss": -0.7084935519857822,
+      "effort_cost": -0.7160557858189452,
+      "misconduct_harm": -0.0,
+      "misconduct_rate": 0.0,
+      "discounted_adverse_effort": 1.772271967578125,
+      "prediction_mse": 0.03623656546006573,
+      "local_maxima_count": 2
+    },
+    {
+      "world": "prediction_minimizer",
+      "regime": "SHORT",
+      "phi": 0.0,
+      "half_life": 0.0,
+      "welfare": 0.6054473023465841,
+      "productive_surplus": 2.6039966401513115,
+      "misallocation_loss": -0.7084935519857822,
+      "effort_cost": -0.7160557858189452,
+      "misconduct_harm": -0.574,
+      "misconduct_rate": 0.9566666666666667,
+      "discounted_adverse_effort": 1.772271967578125,
+      "prediction_mse": 0.03623656546006573,
+      "local_maxima_count": ""
+    }
+  ],
+  "comparative_statics": [
+    {
+      "parameter": "alpha",
+      "value": 0.2,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": -0.5342290056318738,
+      "regime": "SHORT",
+      "local_maxima_count": 3
+    },
+    {
+      "parameter": "alpha",
+      "value": 0.4,
+      "phi_star": 0.009652499999999967,
+      "half_life_star": 0.14936783866322517,
+      "welfare": -0.3307060553208643,
+      "regime": "SHORT",
+      "local_maxima_count": 4
+    },
+    {
+      "parameter": "alpha",
+      "value": 0.55,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 0.6041727161823601,
+      "regime": "SHORT",
+      "local_maxima_count": 3
+    },
+    {
+      "parameter": "alpha",
+      "value": 0.75,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 1.4700386916915464,
+      "regime": "SHORT",
+      "local_maxima_count": 1
+    },
+    {
+      "parameter": "alpha",
+      "value": 0.95,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 2.0646013550334787,
+      "regime": "SHORT",
+      "local_maxima_count": 1
+    },
+    {
+      "parameter": "rho",
+      "value": 0.0,
+      "phi_star": 0.7895249999999999,
+      "half_life_star": 2.9330403400024156,
+      "welfare": -1.248666827323521,
+      "regime": "LONG",
+      "local_maxima_count": 24
+    },
+    {
+      "parameter": "rho",
+      "value": 0.25,
+      "phi_star": 0.007919999999999972,
+      "half_life_star": 0.14326064969059726,
+      "welfare": -0.5929253033710892,
+      "regime": "SHORT",
+      "local_maxima_count": 2
+    },
+    {
+      "parameter": "rho",
+      "value": 0.55,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 0.6041727161823601,
+      "regime": "SHORT",
+      "local_maxima_count": 3
+    },
+    {
+      "parameter": "rho",
+      "value": 0.75,
+      "phi_star": 0.0009899999999999965,
+      "half_life_star": 0.10019755095075962,
+      "welfare": 1.5527835225390043,
+      "regime": "SHORT",
+      "local_maxima_count": 2
+    },
+    {
+      "parameter": "rho",
+      "value": 0.9,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 2.5785984238537716,
+      "regime": "SHORT",
+      "local_maxima_count": 3
+    },
+    {
+      "parameter": "kappa",
+      "value": 0.5,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 1.752175655506741,
+      "regime": "SHORT",
+      "local_maxima_count": 1
+    },
+    {
+      "parameter": "kappa",
+      "value": 0.8,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 1.181438814145033,
+      "regime": "SHORT",
+      "local_maxima_count": 3
+    },
+    {
+      "parameter": "kappa",
+      "value": 1.2,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 0.6041727161823601,
+      "regime": "SHORT",
+      "local_maxima_count": 3
+    },
+    {
+      "parameter": "kappa",
+      "value": 1.8,
+      "phi_star": 0.010147499999999964,
+      "half_life_star": 0.1509950912536782,
+      "welfare": 0.001961184075890743,
+      "regime": "SHORT",
+      "local_maxima_count": 3
+    },
+    {
+      "parameter": "kappa",
+      "value": 3.0,
+      "phi_star": 0.23661,
+      "half_life_star": 0.4809040118924571,
+      "welfare": -0.6644409691009777,
+      "regime": "INTERMEDIATE",
+      "local_maxima_count": 15
+    },
+    {
+      "parameter": "beta",
+      "value": 0.75,
+      "phi_star": 0.43758,
+      "half_life_star": 0.8386579060087543,
+      "welfare": -0.23418346140276047,
+      "regime": "INTERMEDIATE",
+      "local_maxima_count": 14
+    },
+    {
+      "parameter": "beta",
+      "value": 0.85,
+      "phi_star": 0.0027224999999999906,
+      "half_life_star": 0.11735915285655837,
+      "welfare": 0.037486012938637125,
+      "regime": "SHORT",
+      "local_maxima_count": 6
+    },
+    {
+      "parameter": "beta",
+      "value": 0.95,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 0.6041727161823601,
+      "regime": "SHORT",
+      "local_maxima_count": 3
+    },
+    {
+      "parameter": "beta",
+      "value": 0.98,
+      "phi_star": 0.002474999999999991,
+      "half_life_star": 0.11549536976535951,
+      "welfare": 0.8194325162601287,
+      "regime": "SHORT",
+      "local_maxima_count": 1
+    },
+    {
+      "parameter": "misconduct_harm",
+      "value": 0.0,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 1.17817271618236,
+      "regime": "SHORT",
+      "local_maxima_count": 2
+    },
+    {
+      "parameter": "misconduct_harm",
+      "value": 0.5,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 0.9390060495156934,
+      "regime": "SHORT",
+      "local_maxima_count": 2
+    },
+    {
+      "parameter": "misconduct_harm",
+      "value": 1.2,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 0.6041727161823601,
+      "regime": "SHORT",
+      "local_maxima_count": 3
+    },
+    {
+      "parameter": "misconduct_harm",
+      "value": 2.0,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 0.22150604951569342,
+      "regime": "SHORT",
+      "local_maxima_count": 3
+    },
+    {
+      "parameter": "misconduct_harm",
+      "value": 4.0,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": -0.7351606171509733,
+      "regime": "SHORT",
+      "local_maxima_count": 6
+    },
+    {
+      "parameter": "horizon",
+      "value": 2,
+      "phi_star": 0.99396,
+      "half_life_star": 114.4125434480839,
+      "welfare": 0.07617513708161643,
+      "regime": "NEAR_PERMANENT",
+      "local_maxima_count": 16
+    },
+    {
+      "parameter": "horizon",
+      "value": 4,
+      "phi_star": 0.001979999999999993,
+      "half_life_star": 0.11135505471965709,
+      "welfare": 0.17148049023299006,
+      "regime": "SHORT",
+      "local_maxima_count": 4
+    },
+    {
+      "parameter": "horizon",
+      "value": 6,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 0.6041727161823601,
+      "regime": "SHORT",
+      "local_maxima_count": 3
+    },
+    {
+      "parameter": "horizon",
+      "value": 8,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "welfare": 0.9601736097770959,
+      "regime": "SHORT",
+      "local_maxima_count": 2
+    },
+    {
+      "parameter": "horizon",
+      "value": 10,
+      "phi_star": 0.002227499999999992,
+      "half_life_star": 0.11350275473389503,
+      "welfare": 1.2373055422951569,
+      "regime": "SHORT",
+      "local_maxima_count": 2
+    }
+  ],
+  "phase_map": [
+    {
+      "rho": 0.0,
+      "alpha": 0.2,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.0,
+      "alpha": 0.4,
+      "phi_star": 0.04083750000000003,
+      "half_life_star": 0.21673348805211545,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.0,
+      "alpha": 0.6,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.0,
+      "alpha": 0.8,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.0,
+      "alpha": 1.0,
+      "phi_star": 0.004331249999999989,
+      "half_life_star": 0.12737229567403904,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.225,
+      "alpha": 0.2,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.225,
+      "alpha": 0.4,
+      "phi_star": 0.5073749999999999,
+      "half_life_star": 1.021580207680692,
+      "regime": "INTERMEDIATE"
+    },
+    {
+      "rho": 0.225,
+      "alpha": 0.6,
+      "phi_star": 0.0034031249999999912,
+      "half_life_star": 0.12196722189680569,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.225,
+      "alpha": 0.8,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.225,
+      "alpha": 1.0,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.45,
+      "alpha": 0.2,
+      "phi_star": 0.0018562499999999953,
+      "half_life_star": 0.11021235071408225,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.45,
+      "alpha": 0.4,
+      "phi_star": 0.14850000000000002,
+      "half_life_star": 0.36344272612800627,
+      "regime": "INTERMEDIATE"
+    },
+    {
+      "rho": 0.45,
+      "alpha": 0.6,
+      "phi_star": 0.0006187499999999984,
+      "half_life_star": 0.09382310204005997,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.45,
+      "alpha": 0.8,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.45,
+      "alpha": 1.0,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.675,
+      "alpha": 0.2,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.675,
+      "alpha": 0.4,
+      "phi_star": 0.0012374999999999968,
+      "half_life_star": 0.10353729194739157,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.675,
+      "alpha": 0.6,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.675,
+      "alpha": 0.8,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.675,
+      "alpha": 1.0,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.9,
+      "alpha": 0.2,
+      "phi_star": 0.011446874999999971,
+      "half_life_star": 0.15506514735826404,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.9,
+      "alpha": 0.4,
+      "phi_star": 0.0015468749999999962,
+      "half_life_star": 0.10710734725589709,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.9,
+      "alpha": 0.6,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.9,
+      "alpha": 0.8,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    },
+    {
+      "rho": 0.9,
+      "alpha": 1.0,
+      "phi_star": 0.0,
+      "half_life_star": 0.0,
+      "regime": "SHORT"
+    }
+  ],
+  "distributional_incidence": [
+    {
+      "group": 0,
+      "quality": 0.8,
+      "reputation": 0.78,
+      "adverse": false,
+      "welfare": -0.24865041395458565
+    },
+    {
+      "group": 1,
+      "quality": 0.65,
+      "reputation": 0.25,
+      "adverse": true,
+      "welfare": 2.394606220006083
+    },
+    {
+      "group": 2,
+      "quality": 0.35,
+      "reputation": 0.38,
+      "adverse": true,
+      "welfare": 1.8335046932369934
+    },
+    {
+      "group": 3,
+      "quality": 0.2,
+      "reputation": 0.65,
+      "adverse": false,
+      "welfare": -1.5576712899021539
+    }
+  ]
+}

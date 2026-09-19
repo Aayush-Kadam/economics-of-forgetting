@@ -1,0 +1,118 @@
+{
+  "model": "M7-v1",
+  "deterministic": true,
+  "seed": null,
+  "memory_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    0.99
+  ],
+  "effort_grid": 101,
+  "runtime_seconds": 230.6012363433838,
+  "tests": 61,
+  "all_nested": true,
+  "families": {
+    "detection": {
+      "tests": 3,
+      "positive": 3,
+      "material": 2,
+      "min_gain": 0.006631112624653102,
+      "max_gain": 0.38631345790951366
+    },
+    "direct_punishment": {
+      "tests": 5,
+      "positive": 5,
+      "material": 5,
+      "min_gain": 0.039917819215665784,
+      "max_gain": 0.4214068082310237
+    },
+    "discounting": {
+      "tests": 4,
+      "positive": 4,
+      "material": 3,
+      "min_gain": 0.0037412775983038937,
+      "max_gain": 0.13928286840718498
+    },
+    "effort_cost": {
+      "tests": 3,
+      "positive": 3,
+      "material": 3,
+      "min_gain": 0.024755263393435756,
+      "max_gain": 0.18183176287752
+    },
+    "heterogeneity": {
+      "tests": 2,
+      "positive": 2,
+      "material": 2,
+      "min_gain": 0.05594765415326469,
+      "max_gain": 0.06448258411458349
+    },
+    "horizon": {
+      "tests": 6,
+      "positive": 6,
+      "material": 6,
+      "min_gain": 0.019313267900826547,
+      "max_gain": 0.13654310147062915
+    },
+    "initial_distribution": {
+      "tests": 6,
+      "positive": 6,
+      "material": 4,
+      "min_gain": 0.0002799012893509589,
+      "max_gain": 0.43770089663183454
+    },
+    "normalization": {
+      "tests": 3,
+      "positive": 3,
+      "material": 3,
+      "min_gain": 0.039917819215665784,
+      "max_gain": 0.23285299807455895
+    },
+    "opportunity": {
+      "tests": 5,
+      "positive": 5,
+      "material": 3,
+      "min_gain": 0.0002703741626184364,
+      "max_gain": 0.6932991600500954
+    },
+    "persistence": {
+      "tests": 3,
+      "positive": 3,
+      "material": 3,
+      "min_gain": 0.03418225627667043,
+      "max_gain": 0.24838095211466726
+    },
+    "private_benefit": {
+      "tests": 3,
+      "positive": 3,
+      "material": 2,
+      "min_gain": 0.009321388102326078,
+      "max_gain": 0.4090587545295715
+    },
+    "rehabilitation": {
+      "tests": 3,
+      "positive": 3,
+      "material": 3,
+      "min_gain": 0.026617001983963495,
+      "max_gain": 0.20678646620317725
+    },
+    "repeat_misconduct": {
+      "tests": 12,
+      "positive": 12,
+      "material": 6,
+      "min_gain": 0.0029157006464475277,
+      "max_gain": 0.14220059614650782
+    },
+    "social_harm": {
+      "tests": 3,
+      "positive": 3,
+      "material": 3,
+      "min_gain": 0.02640341219329867,
+      "max_gain": 0.42449411401642334
+    }
+  },
+  "continuous_effort_max_difference": 0.0009714347057379058
+}

@@ -1,0 +1,15 @@
+{
+  "model": "M6.5-v1",
+  "deterministic": true,
+  "seed": null,
+  "effort_grid": 301,
+  "runtime_seconds": 245.2725863456726,
+  "points": 36,
+  "positive_refined": 34,
+  "large_checked": 13,
+  "negligible_checked": 3,
+  "large_still_positive": 13,
+  "negligible_still_negligible": 2,
+  "repeat_longer_gain_positive": 7,
+  "all_nested": true
+}

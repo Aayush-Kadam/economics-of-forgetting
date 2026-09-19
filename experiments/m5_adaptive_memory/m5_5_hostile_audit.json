@@ -1,0 +1,3097 @@
+{
+  "timing": {
+    "clean_phi_updates_clean score only; misconduct resets score": "phi_clean does not set punishment",
+    "adverse_phi": "governs score persistence, effort return, and misconduct penalty proxy",
+    "rehab_phi": "applies after streak while still adverse"
+  },
+  "optimum": {
+    "phi_clean": 0.0,
+    "phi_adverse": 0.85,
+    "phi_rehab": 0.85,
+    "good_streak_required": 1
+  },
+  "profiles": {
+    "phi_clean": [
+      {
+        "value": 0.0,
+        "welfare": -0.26504204232162965,
+        "prediction_mse": 0.06158911265588967,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.01,
+        "welfare": -0.2650571050176206,
+        "prediction_mse": 0.061610026538074694,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.02,
+        "welfare": -0.2650745568724857,
+        "prediction_mse": 0.06163185067375654,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.03,
+        "welfare": -0.26509446385987623,
+        "prediction_mse": 0.061654588276091125,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.04,
+        "welfare": -0.2651168928952573,
+        "prediction_mse": 0.06167824279936962,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.05,
+        "welfare": -0.26514191177944724,
+        "prediction_mse": 0.06170281794066163,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.06,
+        "welfare": -0.2651695891400001,
+        "prediction_mse": 0.0617283176416187,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.07,
+        "welfare": -0.2651999943704112,
+        "prediction_mse": 0.061754746090439676,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.08,
+        "welfare": -0.2652331975671294,
+        "prediction_mse": 0.0617821077240001,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.09,
+        "welfare": -0.2652692694643608,
+        "prediction_mse": 0.06181040723014781,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.1,
+        "welfare": -0.2653082813666956,
+        "prediction_mse": 0.061839649550166916,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.11,
+        "welfare": -0.26535030507957214,
+        "prediction_mse": 0.0618698398814134,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.12,
+        "welfare": -0.2653954128376276,
+        "prediction_mse": 0.06190098368012431,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.13,
+        "welfare": -0.2654436772310056,
+        "prediction_mse": 0.06193308666440433,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.14,
+        "welfare": -0.26549517112968746,
+        "prediction_mse": 0.061966154817392684,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.15,
+        "welfare": -0.26554996760597105,
+        "prediction_mse": 0.062000194390613696,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.16,
+        "welfare": -0.26560813985520026,
+        "prediction_mse": 0.062035211907515396,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.17,
+        "welfare": -0.2656697611148975,
+        "prediction_mse": 0.062071214167199046,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.18,
+        "welfare": -0.2657349045824714,
+        "prediction_mse": 0.06210820824834515,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.19,
+        "welfare": -0.26580364333167183,
+        "prediction_mse": 0.06214620151333914,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.2,
+        "welfare": -0.2658760502280195,
+        "prediction_mse": 0.062185201612602485,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.21,
+        "welfare": -0.26595219784343027,
+        "prediction_mse": 0.06222521648913339,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.22,
+        "welfare": -0.26603215837029603,
+        "prediction_mse": 0.0622662543832631,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.23,
+        "welfare": -0.26611600353530007,
+        "prediction_mse": 0.06230832383763263,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.24,
+        "welfare": -0.2662038045132574,
+        "prediction_mse": 0.06235143370239645,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.25,
+        "welfare": -0.2662956318413022,
+        "prediction_mse": 0.06239559314065868,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.26,
+        "welfare": -0.2663915553337618,
+        "prediction_mse": 0.06244081163414865,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.27,
+        "welfare": -0.2664916439980606,
+        "prediction_mse": 0.06248709898914237,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.28,
+        "welfare": -0.26659596595202584,
+        "prediction_mse": 0.0625344653426369,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.29,
+        "welfare": -0.2667045883429693,
+        "prediction_mse": 0.06258292116878549,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.3,
+        "welfare": -0.26681757726892374,
+        "prediction_mse": 0.06263247728560065,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.31,
+        "welfare": -0.26693499770242946,
+        "prediction_mse": 0.06268314486193383,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.32,
+        "welfare": -0.26705691341723836,
+        "prediction_mse": 0.06273493542473975,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.33,
+        "welfare": -0.2671833869183299,
+        "prediction_mse": 0.06278786086663467,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.34,
+        "welfare": -0.26731447937557495,
+        "prediction_mse": 0.0628419334537574,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.35000000000000003,
+        "welfare": -0.26745025056140503,
+        "prediction_mse": 0.06289716583394328,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.36,
+        "welfare": -0.2675907587927795,
+        "prediction_mse": 0.06295357104522059,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.37,
+        "welfare": -0.2677360608777175,
+        "prediction_mse": 0.06301116252464065,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.38,
+        "welfare": -0.26788621206661345,
+        "prediction_mse": 0.06306995411745159,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.39,
+        "welfare": -0.26804126600847633,
+        "prediction_mse": 0.06312996008662823,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.4,
+        "welfare": -0.2682012747121758,
+        "prediction_mse": 0.0631911951227693,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.41000000000000003,
+        "welfare": -0.2683662885126785,
+        "prediction_mse": 0.0632536743543746,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.42,
+        "welfare": -0.26853635604214277,
+        "prediction_mse": 0.06331741335851465,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.43,
+        "welfare": -0.26871152420565436,
+        "prediction_mse": 0.06338242817190694,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.44,
+        "welfare": -0.2688918381611919,
+        "prediction_mse": 0.06344873530241173,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.45,
+        "welfare": -0.26907734130331584,
+        "prediction_mse": 0.06351635174096265,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.46,
+        "welfare": -0.2692680752498503,
+        "prediction_mse": 0.06358529497394659,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.47000000000000003,
+        "welfare": -0.26946407983065646,
+        "prediction_mse": 0.06365558299604883,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.48,
+        "welfare": -0.26966539307737125,
+        "prediction_mse": 0.0637272343235791,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.49,
+        "welfare": -0.2698720512127535,
+        "prediction_mse": 0.06380026800829618,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.5,
+        "welfare": -0.27008408863802014,
+        "prediction_mse": 0.06387470365174719,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.51,
+        "welfare": -0.27030153791625966,
+        "prediction_mse": 0.0639505614201412,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.52,
+        "welfare": -0.27052442974974644,
+        "prediction_mse": 0.06402786205977433,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.53,
+        "welfare": -0.2707527929486241,
+        "prediction_mse": 0.06410662691302686,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.54,
+        "welfare": -0.27098665438811,
+        "prediction_mse": 0.06418687793495192,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.55,
+        "welfare": -0.27122603895101727,
+        "prediction_mse": 0.06426863771047653,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.56,
+        "welfare": -0.27147096945202887,
+        "prediction_mse": 0.06435192947223703,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.5700000000000001,
+        "welfare": -0.27172146653977125,
+        "prediction_mse": 0.06443677711907043,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.58,
+        "welfare": -0.27197754857237333,
+        "prediction_mse": 0.06452320523518562,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.59,
+        "welfare": -0.27223923146179374,
+        "prediction_mse": 0.06461123911003756,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.6,
+        "welfare": -0.27250652848184065,
+        "prediction_mse": 0.06470090475892966,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.61,
+        "welfare": -0.2727794500344056,
+        "prediction_mse": 0.06479222894436969,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.62,
+        "welfare": -0.2730580033681045,
+        "prediction_mse": 0.06488523919820563,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.63,
+        "welfare": -0.27334219224314626,
+        "prediction_mse": 0.06497996384456858,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.64,
+        "welfare": -0.2736320165359494,
+        "prediction_mse": 0.06507643202365147,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.65,
+        "welfare": -0.27392747177670695,
+        "prediction_mse": 0.06517467371635176,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.66,
+        "welfare": -0.2742285486128557,
+        "prediction_mse": 0.06527471976980911,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.67,
+        "welfare": -0.27453523219115183,
+        "prediction_mse": 0.06537660192386854,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.68,
+        "welfare": -0.2748475014508671,
+        "prediction_mse": 0.06548035283850111,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.6900000000000001,
+        "welfare": -0.2751653283204629,
+        "prediction_mse": 0.06558600612221537,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.7000000000000001,
+        "welfare": -0.27548867680996936,
+        "prediction_mse": 0.06569359636149343,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.71,
+        "welfare": -0.27581750199127597,
+        "prediction_mse": 0.0658031591512872,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.72,
+        "welfare": -0.27615174885852833,
+        "prediction_mse": 0.0659147311266106,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.73,
+        "welfare": -0.2764913510609639,
+        "prediction_mse": 0.0660283499952651,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.74,
+        "welfare": -0.2768362295008072,
+        "prediction_mse": 0.06614405457173786,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.75,
+        "welfare": -0.27718629078931145,
+        "prediction_mse": 0.06626188481231086,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.76,
+        "welfare": -0.27754142555489614,
+        "prediction_mse": 0.0663818818514233,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.77,
+        "welfare": -0.2779015065985828,
+        "prediction_mse": 0.06650408803932817,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.78,
+        "welfare": -0.27826638689391225,
+        "prediction_mse": 0.06662854698108714,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.79,
+        "welfare": -0.27863589743143247,
+        "prediction_mse": 0.06675530357694803,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.8,
+        "welfare": -0.2790098449119669,
+        "prediction_mse": 0.06688440406415076,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.81,
+        "welfare": -0.2793880092987737,
+        "prediction_mse": 0.06701589606020926,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.8200000000000001,
+        "welfare": -0.2797701412466741,
+        "prediction_mse": 0.0671498286077178,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.8300000000000001,
+        "welfare": -0.2801559594370441,
+        "prediction_mse": 0.0672862522207317,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.84,
+        "welfare": -0.28054514786163054,
+        "prediction_mse": 0.06742521893277416,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.85,
+        "welfare": -0.28093735311619306,
+        "prediction_mse": 0.06756678234652135,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.86,
+        "welfare": -0.281332181787348,
+        "prediction_mse": 0.06771099768522128,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.87,
+        "welfare": -0.28172919804299135,
+        "prediction_mse": 0.06785792184590096,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.88,
+        "welfare": -0.28212792156795885,
+        "prediction_mse": 0.06800761345442036,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.89,
+        "welfare": -0.28252782602128956,
+        "prediction_mse": 0.06816013292243149,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.9,
+        "welfare": -0.2829283382275629,
+        "prediction_mse": 0.06831554250630323,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.91,
+        "welfare": -0.2833288383490321,
+        "prediction_mse": 0.06847390636807454,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.92,
+        "welfare": -0.2837286613126859,
+        "prediction_mse": 0.06863529063849907,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.93,
+        "welfare": -0.284127099780075,
+        "prediction_mse": 0.06879976348224771,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.9400000000000001,
+        "welfare": -0.2845234089387414,
+        "prediction_mse": 0.06896739516533539,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.9500000000000001,
+        "welfare": -0.28491681335175034,
+        "prediction_mse": 0.06913825812484191,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.96,
+        "welfare": -0.2853065160149647,
+        "prediction_mse": 0.06931242704099708,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.97,
+        "welfare": -0.2856917096313475,
+        "prediction_mse": 0.06948997891170332,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.98,
+        "welfare": -0.28607158991555803,
+        "prediction_mse": 0.06967099312956955,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.99,
+        "welfare": -0.28644537050090213,
+        "prediction_mse": 0.06985555156153352,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      }
+    ],
+    "phi_adverse": [
+      {
+        "value": 0.0,
+        "welfare": -2.764286522843741,
+        "prediction_mse": 0.22646480543726077,
+        "misconduct": 2.932296799648074,
+        "repeat": 1.9322968793563793
+      },
+      {
+        "value": 0.01,
+        "welfare": -2.776977752519055,
+        "prediction_mse": 0.22529124105553033,
+        "misconduct": 2.932296799648074,
+        "repeat": 1.9322968793563793
+      },
+      {
+        "value": 0.02,
+        "welfare": -2.7898709436623315,
+        "prediction_mse": 0.22414164413756033,
+        "misconduct": 2.932296799648074,
+        "repeat": 1.9322968793563793
+      },
+      {
+        "value": 0.03,
+        "welfare": -2.8029556554097184,
+        "prediction_mse": 0.22301929132238218,
+        "misconduct": 2.932296799648074,
+        "repeat": 1.9322968793563793
+      },
+      {
+        "value": 0.04,
+        "welfare": -2.8162329418668897,
+        "prediction_mse": 0.22192399523371362,
+        "misconduct": 2.932296799648074,
+        "repeat": 1.9322968793563793
+      },
+      {
+        "value": 0.05,
+        "welfare": -2.829694891749566,
+        "prediction_mse": 0.22085583050837906,
+        "misconduct": 2.932296799648074,
+        "repeat": 1.9322968793563793
+      },
+      {
+        "value": 0.06,
+        "welfare": -2.8431840184602715,
+        "prediction_mse": 0.2198873118412302,
+        "misconduct": 2.932296799648074,
+        "repeat": 1.9322968793563793
+      },
+      {
+        "value": 0.07,
+        "welfare": -2.856985934647594,
+        "prediction_mse": 0.21887337667276865,
+        "misconduct": 2.932296799648074,
+        "repeat": 1.9322968793563793
+      },
+      {
+        "value": 0.08,
+        "welfare": -2.8703522452542205,
+        "prediction_mse": 0.21790162131909452,
+        "misconduct": 2.932296799648074,
+        "repeat": 1.9322968793563793
+      },
+      {
+        "value": 0.09,
+        "welfare": -2.8840322866492634,
+        "prediction_mse": 0.2168789077499838,
+        "misconduct": 2.932296799648074,
+        "repeat": 1.9322968793563793
+      },
+      {
+        "value": 0.1,
+        "welfare": -2.8983571150003553,
+        "prediction_mse": 0.21594242182594922,
+        "misconduct": 2.932296799648074,
+        "repeat": 1.9322968793563793
+      },
+      {
+        "value": 0.11,
+        "welfare": -2.91256926447082,
+        "prediction_mse": 0.21518238292272382,
+        "misconduct": 2.932296799648074,
+        "repeat": 1.9322968793563793
+      },
+      {
+        "value": 0.12,
+        "welfare": -2.926691394400175,
+        "prediction_mse": 0.2142397495276583,
+        "misconduct": 2.9322781818813044,
+        "repeat": 1.9322782615896097
+      },
+      {
+        "value": 0.13,
+        "welfare": -2.9410073321153227,
+        "prediction_mse": 0.21332384776887658,
+        "misconduct": 2.9322781818813044,
+        "repeat": 1.9322782615896097
+      },
+      {
+        "value": 0.14,
+        "welfare": -2.9540230659590554,
+        "prediction_mse": 0.21248814170833438,
+        "misconduct": 2.9318299233429297,
+        "repeat": 1.9318300030512354
+      },
+      {
+        "value": 0.15,
+        "welfare": -2.968128334128015,
+        "prediction_mse": 0.21157459737236367,
+        "misconduct": 2.9318299233429297,
+        "repeat": 1.9318300030512354
+      },
+      {
+        "value": 0.16,
+        "welfare": -2.9761667623513883,
+        "prediction_mse": 0.21075132483275238,
+        "misconduct": 2.922326159310728,
+        "repeat": 1.9223262390190334
+      },
+      {
+        "value": 0.17,
+        "welfare": -2.989863127803129,
+        "prediction_mse": 0.2098950174596078,
+        "misconduct": 2.9223075415439586,
+        "repeat": 1.9223076212522638
+      },
+      {
+        "value": 0.18,
+        "welfare": -2.82561644389567,
+        "prediction_mse": 0.1941033934881363,
+        "misconduct": 2.90288899047472,
+        "repeat": 1.902889070183025
+      },
+      {
+        "value": 0.19,
+        "welfare": -2.8311953620238772,
+        "prediction_mse": 0.1933374233293332,
+        "misconduct": 2.892974203437683,
+        "repeat": 1.892974283145988
+      },
+      {
+        "value": 0.2,
+        "welfare": -2.8450969261493104,
+        "prediction_mse": 0.1927144583899427,
+        "misconduct": 2.8925445626660777,
+        "repeat": 1.8925446423743828
+      },
+      {
+        "value": 0.21,
+        "welfare": -2.85955111137064,
+        "prediction_mse": 0.19205632049973187,
+        "misconduct": 2.8921149218944726,
+        "repeat": 1.8921150016027777
+      },
+      {
+        "value": 0.22,
+        "welfare": -2.7127401557381154,
+        "prediction_mse": 0.19066095280295248,
+        "misconduct": 2.672778672615357,
+        "repeat": 1.6727787523236626
+      },
+      {
+        "value": 0.23,
+        "welfare": -2.7250702171202668,
+        "prediction_mse": 0.18998109862193185,
+        "misconduct": 2.6723490318437517,
+        "repeat": 1.672349111552058
+      },
+      {
+        "value": 0.24,
+        "welfare": -2.737808247829868,
+        "prediction_mse": 0.1893699301172018,
+        "misconduct": 2.6723490318437517,
+        "repeat": 1.672349111552058
+      },
+      {
+        "value": 0.25,
+        "welfare": -2.7360904305606555,
+        "prediction_mse": 0.1880284365344034,
+        "misconduct": 2.6624156270399455,
+        "repeat": 1.662415706748251
+      },
+      {
+        "value": 0.26,
+        "welfare": -2.389658545865542,
+        "prediction_mse": 0.17188072691567263,
+        "misconduct": 2.4232684214535256,
+        "repeat": 1.4232685011618311
+      },
+      {
+        "value": 0.27,
+        "welfare": -2.376529893853133,
+        "prediction_mse": 0.17109986923005024,
+        "misconduct": 2.393953701114019,
+        "repeat": 1.393953780822325
+      },
+      {
+        "value": 0.28,
+        "welfare": -2.2047614325033758,
+        "prediction_mse": 0.16895930586529875,
+        "misconduct": 2.1742064288300686,
+        "repeat": 1.1742065085383746
+      },
+      {
+        "value": 0.29,
+        "welfare": -1.859378469873445,
+        "prediction_mse": 0.15397110578067835,
+        "misconduct": 1.9354702462484836,
+        "repeat": 0.9354703259567901
+      },
+      {
+        "value": 0.3,
+        "welfare": -1.8694208324092936,
+        "prediction_mse": 0.1533727948655285,
+        "misconduct": 1.9354702462484836,
+        "repeat": 0.9354703259567901
+      },
+      {
+        "value": 0.31,
+        "welfare": -1.8818079471933817,
+        "prediction_mse": 0.15277035189258342,
+        "misconduct": 1.9354702462484836,
+        "repeat": 0.9354703259567901
+      },
+      {
+        "value": 0.32,
+        "welfare": -1.5577255181920586,
+        "prediction_mse": 0.13940489320018512,
+        "misconduct": 1.706667468470706,
+        "repeat": 0.7066675481790123
+      },
+      {
+        "value": 0.33,
+        "welfare": -1.2310501557225335,
+        "prediction_mse": 0.12612676135169146,
+        "misconduct": 1.4679499036558912,
+        "repeat": 0.4679499833641975
+      },
+      {
+        "value": 0.34,
+        "welfare": -1.032689898047388,
+        "prediction_mse": 0.12226819159637246,
+        "misconduct": 1.2387174851065088,
+        "repeat": 0.23871756481481482
+      },
+      {
+        "value": 0.35000000000000003,
+        "welfare": -1.043631388230259,
+        "prediction_mse": 0.12199294197585465,
+        "misconduct": 1.2387174851065088,
+        "repeat": 0.23871756481481482
+      },
+      {
+        "value": 0.36,
+        "welfare": -1.0537688114139239,
+        "prediction_mse": 0.12166101393333426,
+        "misconduct": 1.2387174851065088,
+        "repeat": 0.23871756481481482
+      },
+      {
+        "value": 0.37,
+        "welfare": -1.0642362454797765,
+        "prediction_mse": 0.1212739580535179,
+        "misconduct": 1.2387174851065088,
+        "repeat": 0.23871756481481482
+      },
+      {
+        "value": 0.38,
+        "welfare": -0.9706369442444625,
+        "prediction_mse": 0.11258490191540003,
+        "misconduct": 1.228802698069472,
+        "repeat": 0.22880277777777777
+      },
+      {
+        "value": 0.39,
+        "welfare": -0.7789689013943875,
+        "prediction_mse": 0.11182826346173862,
+        "misconduct": 0.9999999202916946,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.4,
+        "welfare": -0.7949921365112249,
+        "prediction_mse": 0.1123174889184623,
+        "misconduct": 0.9999999202916946,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.41000000000000003,
+        "welfare": -0.811607650912574,
+        "prediction_mse": 0.11277342708120278,
+        "misconduct": 0.9999999202916946,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.42,
+        "welfare": -0.8266133117223184,
+        "prediction_mse": 0.11349654239883993,
+        "misconduct": 0.9999999202916946,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.43,
+        "welfare": -0.842193274019206,
+        "prediction_mse": 0.11409482470928951,
+        "misconduct": 0.9999999202916946,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.44,
+        "welfare": -0.8692182768465841,
+        "prediction_mse": 0.11421737102823609,
+        "misconduct": 0.9999976639447746,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.45,
+        "welfare": -0.8845368980791316,
+        "prediction_mse": 0.11490180732531675,
+        "misconduct": 0.9999976639447746,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.46,
+        "welfare": -0.8997123600737622,
+        "prediction_mse": 0.11554683586495507,
+        "misconduct": 0.9999976639447746,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.47000000000000003,
+        "welfare": -0.9155146928478267,
+        "prediction_mse": 0.1161266239955769,
+        "misconduct": 0.9999976639447746,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.48,
+        "welfare": -0.8793740487993889,
+        "prediction_mse": 0.11707212941500694,
+        "misconduct": 0.9999859951717265,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.49,
+        "welfare": -0.8944048407318457,
+        "prediction_mse": 0.1177491968233887,
+        "misconduct": 0.9999859951717265,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.5,
+        "welfare": -0.9093237017209297,
+        "prediction_mse": 0.1184871575999947,
+        "misconduct": 0.9999859951717265,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.51,
+        "welfare": -0.9245785886681938,
+        "prediction_mse": 0.11921755064643193,
+        "misconduct": 0.9999859951717265,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.52,
+        "welfare": -0.978319821730552,
+        "prediction_mse": 0.12130351548292356,
+        "misconduct": 0.9999859951717265,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.53,
+        "welfare": -0.9906490096051448,
+        "prediction_mse": 0.12206805138161123,
+        "misconduct": 0.9999859951717265,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.54,
+        "welfare": -1.003388276339165,
+        "prediction_mse": 0.12275339266958499,
+        "misconduct": 0.9999859951717265,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.55,
+        "welfare": -0.9598149777026386,
+        "prediction_mse": 0.12084155277195202,
+        "misconduct": 0.9998479031829922,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.56,
+        "welfare": -0.9185180081196088,
+        "prediction_mse": 0.11996205238945873,
+        "misconduct": 0.9998362344099443,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.5700000000000001,
+        "welfare": -0.9285460598465872,
+        "prediction_mse": 0.12020048281124306,
+        "misconduct": 0.9998362344099443,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.58,
+        "welfare": -0.9366424643287999,
+        "prediction_mse": 0.11998388645911644,
+        "misconduct": 0.9998362344099443,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.59,
+        "welfare": -0.9438380872417055,
+        "prediction_mse": 0.1199244052735,
+        "misconduct": 0.9998362344099443,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.6,
+        "welfare": -0.9507600059141692,
+        "prediction_mse": 0.11960702051249675,
+        "misconduct": 0.9998362344099443,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.61,
+        "welfare": -0.9561636531920603,
+        "prediction_mse": 0.1190191343196121,
+        "misconduct": 0.9998362344099443,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.62,
+        "welfare": -0.9616665575777754,
+        "prediction_mse": 0.11837622615990856,
+        "misconduct": 0.9998362344099443,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.63,
+        "welfare": -0.8809881360489162,
+        "prediction_mse": 0.11211644973758096,
+        "misconduct": 0.9982020096911942,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.64,
+        "welfare": -0.8895713117759636,
+        "prediction_mse": 0.11215595978826923,
+        "misconduct": 0.9982020096911942,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.65,
+        "welfare": -0.8977926562038889,
+        "prediction_mse": 0.11207470891704313,
+        "misconduct": 0.9982020096911942,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.66,
+        "welfare": -0.8178854121675764,
+        "prediction_mse": 0.10378218528102928,
+        "misconduct": 0.99806391770246,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.67,
+        "welfare": -0.8158332031615668,
+        "prediction_mse": 0.10275036069950325,
+        "misconduct": 0.995706307999392,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.68,
+        "welfare": -0.8211374537747814,
+        "prediction_mse": 0.10200382849350266,
+        "misconduct": 0.995706307999392,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.6900000000000001,
+        "welfare": -0.8255360610890585,
+        "prediction_mse": 0.1012416022142784,
+        "misconduct": 0.995706307999392,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.7000000000000001,
+        "welfare": -0.7617098515791555,
+        "prediction_mse": 0.09947313008951575,
+        "misconduct": 0.9686239796834197,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.71,
+        "welfare": -0.7638975524859196,
+        "prediction_mse": 0.10084328014576466,
+        "misconduct": 0.9686239796834197,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.72,
+        "welfare": -0.7758616552790119,
+        "prediction_mse": 0.10002799784834408,
+        "misconduct": 0.9686239796834197,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.73,
+        "welfare": -0.5647050228016901,
+        "prediction_mse": 0.10281252535439678,
+        "misconduct": 0.7495260630167531,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.74,
+        "welfare": -0.5790796418714281,
+        "prediction_mse": 0.1010858421439226,
+        "misconduct": 0.7495260630167531,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.75,
+        "welfare": -0.5192440664849636,
+        "prediction_mse": 0.09730621241374292,
+        "misconduct": 0.7461784615508297,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.76,
+        "welfare": -0.5152716868510994,
+        "prediction_mse": 0.09237149374937019,
+        "misconduct": 0.7435303241815653,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.77,
+        "welfare": -0.5182723362661947,
+        "prediction_mse": 0.09294755996698369,
+        "misconduct": 0.7435303241815653,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.78,
+        "welfare": -0.5173547350457801,
+        "prediction_mse": 0.08796262948781547,
+        "misconduct": 0.7435303241815653,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.79,
+        "welfare": -0.5179508622471561,
+        "prediction_mse": 0.08422257921024684,
+        "misconduct": 0.7435303241815653,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.8,
+        "welfare": -0.516152769977659,
+        "prediction_mse": 0.08035922780175657,
+        "misconduct": 0.7435303241815653,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.81,
+        "welfare": -0.4446173802628547,
+        "prediction_mse": 0.07639172039740186,
+        "misconduct": 0.709801056556956,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.8200000000000001,
+        "welfare": -0.4358369937546479,
+        "prediction_mse": 0.07253700374171614,
+        "misconduct": 0.7009574737533638,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.8300000000000001,
+        "welfare": -0.2572789005747149,
+        "prediction_mse": 0.06796704946649114,
+        "misconduct": 0.49997160396169715,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.84,
+        "welfare": -0.2625739337882893,
+        "prediction_mse": 0.06608364113399648,
+        "misconduct": 0.49997160396169715,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.85,
+        "welfare": -0.26504204232162965,
+        "prediction_mse": 0.06158911265588967,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.86,
+        "welfare": -0.27256602073371494,
+        "prediction_mse": 0.058272944266984435,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.87,
+        "welfare": -0.2932539210991749,
+        "prediction_mse": 0.054831037678689375,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.88,
+        "welfare": -0.3087637235506637,
+        "prediction_mse": 0.05156905161017672,
+        "misconduct": 0.4998403340605714,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.89,
+        "welfare": -0.3237249988320095,
+        "prediction_mse": 0.048839683775026496,
+        "misconduct": 0.499691958619244,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.9,
+        "welfare": -0.3765760087880894,
+        "prediction_mse": 0.04504171708121711,
+        "misconduct": 0.499691958619244,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.91,
+        "welfare": -0.39846679660307033,
+        "prediction_mse": 0.04285330056247776,
+        "misconduct": 0.4994585780985571,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.92,
+        "welfare": -0.41981192662307965,
+        "prediction_mse": 0.041190469278767086,
+        "misconduct": 0.4991155818366436,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.93,
+        "welfare": -0.43793502816480745,
+        "prediction_mse": 0.04026014397661334,
+        "misconduct": 0.49800203000079535,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.9400000000000001,
+        "welfare": -0.5095521339141212,
+        "prediction_mse": 0.030646309375020643,
+        "misconduct": 0.49616861351969466,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.9500000000000001,
+        "welfare": -0.5236750986164923,
+        "prediction_mse": 0.03160442993770377,
+        "misconduct": 0.4917760276093807,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.96,
+        "welfare": -0.5328947956249128,
+        "prediction_mse": 0.03343066665264048,
+        "misconduct": 0.48257680253942736,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.97,
+        "welfare": -0.5260506056232909,
+        "prediction_mse": 0.03623544831366313,
+        "misconduct": 0.4584659467826623,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.98,
+        "welfare": -0.48957740216616874,
+        "prediction_mse": 0.040334163638594975,
+        "misconduct": 0.40299529852760896,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.99,
+        "welfare": -0.41563738709311,
+        "prediction_mse": 0.045796288039169755,
+        "misconduct": 0.3054991414739911,
+        "repeat": 0.0
+      }
+    ],
+    "phi_rehab": [
+      {
+        "value": 0.0,
+        "welfare": -0.8209430460292786,
+        "prediction_mse": 0.07207034369415186,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.01,
+        "welfare": -0.8224578690373757,
+        "prediction_mse": 0.07186870340036178,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.02,
+        "welfare": -0.8239928432451968,
+        "prediction_mse": 0.07166938089589214,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.03,
+        "welfare": -0.8255479896278094,
+        "prediction_mse": 0.07147237618074298,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.04,
+        "welfare": -0.8271233187182289,
+        "prediction_mse": 0.07127768925491428,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.05,
+        "welfare": -0.828718830289194,
+        "prediction_mse": 0.07108532011840604,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.06,
+        "welfare": -0.8303345130399605,
+        "prediction_mse": 0.07089526877121825,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.07,
+        "welfare": -0.8319703442890138,
+        "prediction_mse": 0.07070753521335092,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.08,
+        "welfare": -0.833626289673623,
+        "prediction_mse": 0.07052211944480408,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.09,
+        "welfare": -0.8353023028571867,
+        "prediction_mse": 0.07033902146557768,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.1,
+        "welfare": -0.8369983252453328,
+        "prediction_mse": 0.07015824127567172,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.11,
+        "welfare": -0.8387142857117658,
+        "prediction_mse": 0.06997977887508623,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.12,
+        "welfare": -0.840450100334854,
+        "prediction_mse": 0.0698036342638212,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.13,
+        "welfare": -0.8422056721459737,
+        "prediction_mse": 0.06962980744187663,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.14,
+        "welfare": -0.8439808908906294,
+        "prediction_mse": 0.06945829840925254,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.15,
+        "welfare": -0.8457756328033691,
+        "prediction_mse": 0.06928910716594888,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.16,
+        "welfare": -0.8475897603975246,
+        "prediction_mse": 0.06912223371196569,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.17,
+        "welfare": -0.8494231222707934,
+        "prediction_mse": 0.06895767804730296,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.18,
+        "welfare": -0.851275552927671,
+        "prediction_mse": 0.0687954401719607,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.19,
+        "welfare": -0.8531468726197358,
+        "prediction_mse": 0.06863552008593889,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.2,
+        "welfare": -0.8550368872047641,
+        "prediction_mse": 0.06847791778923754,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.21,
+        "welfare": -0.8569453880256317,
+        "prediction_mse": 0.06832263328185664,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.22,
+        "welfare": -0.8588721518099316,
+        "prediction_mse": 0.06816966656379621,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.23,
+        "welfare": -0.8608169405912056,
+        "prediction_mse": 0.06801901763505623,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.24,
+        "welfare": -0.8627795016526447,
+        "prediction_mse": 0.06787068649563673,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.25,
+        "welfare": -0.8647595674940756,
+        "prediction_mse": 0.06772467314553766,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.26,
+        "welfare": -0.8667568558229966,
+        "prediction_mse": 0.06758097758475907,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.27,
+        "welfare": -0.8687710695703763,
+        "prediction_mse": 0.06743959981330094,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.28,
+        "welfare": -0.8708018969318698,
+        "prediction_mse": 0.06730053983116327,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.29,
+        "welfare": -0.8728490114350373,
+        "prediction_mse": 0.06716379763834605,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.3,
+        "welfare": -0.8749120720330897,
+        "prediction_mse": 0.06702937323484931,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.31,
+        "welfare": -0.876990723225606,
+        "prediction_mse": 0.06689726662067301,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.32,
+        "welfare": -0.8790845952065948,
+        "prediction_mse": 0.06676747779581717,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.33,
+        "welfare": -0.8811933040401814,
+        "prediction_mse": 0.0666400067602818,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.34,
+        "welfare": -0.8829394232961201,
+        "prediction_mse": 0.06658037140017845,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.35000000000000003,
+        "welfare": -0.8850831999925404,
+        "prediction_mse": 0.06645726371041355,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.36,
+        "welfare": -0.8872407394413165,
+        "prediction_mse": 0.06633648379214843,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.37,
+        "welfare": -0.8894116013352482,
+        "prediction_mse": 0.0662180316453831,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.38,
+        "welfare": -0.8915953323042953,
+        "prediction_mse": 0.06610190727011758,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.39,
+        "welfare": -0.8937914662588551,
+        "prediction_mse": 0.06598811066635182,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.4,
+        "welfare": -0.8959995247607497,
+        "prediction_mse": 0.06587664183408588,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.41000000000000003,
+        "welfare": -0.8982190174214646,
+        "prediction_mse": 0.06576750077331972,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.42,
+        "welfare": -0.9004494423270644,
+        "prediction_mse": 0.06566068748405335,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.43,
+        "welfare": -0.902690286489117,
+        "prediction_mse": 0.06555620196628675,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.44,
+        "welfare": -0.9049410263208524,
+        "prediction_mse": 0.06545404422001996,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.45,
+        "welfare": -0.9072011281376795,
+        "prediction_mse": 0.06535421424525296,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.46,
+        "welfare": -0.9091823200911484,
+        "prediction_mse": 0.0653198071513804,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.47000000000000003,
+        "welfare": -0.9114678457812522,
+        "prediction_mse": 0.06522448032120244,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.48,
+        "welfare": -0.9137611983942553,
+        "prediction_mse": 0.06513149127690891,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.49,
+        "welfare": -0.9160618045669124,
+        "prediction_mse": 0.0650408400184998,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.5,
+        "welfare": -0.9183690834872809,
+        "prediction_mse": 0.06495252654597512,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.51,
+        "welfare": -0.9206824475260591,
+        "prediction_mse": 0.06486655085933486,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.52,
+        "welfare": -0.9227654809028338,
+        "prediction_mse": 0.06484542986009967,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.53,
+        "welfare": -0.9252598139781232,
+        "prediction_mse": 0.0647184062660145,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.54,
+        "welfare": -0.9275900099327644,
+        "prediction_mse": 0.06463951468394855,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.55,
+        "welfare": -0.9299239161398974,
+        "prediction_mse": 0.06456296388168888,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.56,
+        "welfare": -0.9320618719173737,
+        "prediction_mse": 0.06455114988425442,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.5700000000000001,
+        "welfare": -0.9344107083276467,
+        "prediction_mse": 0.06447922912776503,
+        "misconduct": 0.9985375931175974,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.58,
+        "welfare": -0.8240054557283651,
+        "prediction_mse": 0.06727652754987201,
+        "misconduct": 0.9962067897630124,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.59,
+        "welfare": -0.8279001656428187,
+        "prediction_mse": 0.06725904057786135,
+        "misconduct": 0.9962067897630124,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.6,
+        "welfare": -0.8312769107721234,
+        "prediction_mse": 0.067310628416408,
+        "misconduct": 0.9962067897630124,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.61,
+        "welfare": -0.8352675974480657,
+        "prediction_mse": 0.06729991888097141,
+        "misconduct": 0.9962067897630124,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.62,
+        "welfare": -0.8393965684898441,
+        "prediction_mse": 0.06724837970206346,
+        "misconduct": 0.9962067897630124,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.63,
+        "welfare": -0.8429439533600513,
+        "prediction_mse": 0.06731137094062234,
+        "misconduct": 0.9962067897630124,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.64,
+        "welfare": -0.8470617146694264,
+        "prediction_mse": 0.06731176209299213,
+        "misconduct": 0.9962067897630124,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.65,
+        "welfare": -0.8512942806640589,
+        "prediction_mse": 0.06727212030379272,
+        "misconduct": 0.9962067897630124,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.66,
+        "welfare": -0.8552283647857768,
+        "prediction_mse": 0.06730786740661174,
+        "misconduct": 0.9962067897630124,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.67,
+        "welfare": -0.8595200630665041,
+        "prediction_mse": 0.06727643126523543,
+        "misconduct": 0.9962067897630124,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.68,
+        "welfare": -0.7677733098872288,
+        "prediction_mse": 0.06948756126860993,
+        "misconduct": 0.9938759864084273,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.6900000000000001,
+        "welfare": -0.7738099168374795,
+        "prediction_mse": 0.06948862127936657,
+        "misconduct": 0.9938759864084273,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.7000000000000001,
+        "welfare": -0.779655672296921,
+        "prediction_mse": 0.06953068661727313,
+        "misconduct": 0.9938759864084273,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.71,
+        "welfare": -0.7859338288778739,
+        "prediction_mse": 0.0694999571140989,
+        "misconduct": 0.9938759864084273,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.72,
+        "welfare": -0.7922232603123665,
+        "prediction_mse": 0.06948341458955665,
+        "misconduct": 0.9938759864084273,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.73,
+        "welfare": -0.7986698073890375,
+        "prediction_mse": 0.069428850469249,
+        "misconduct": 0.9938759864084273,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.74,
+        "welfare": -0.8056313216129185,
+        "prediction_mse": 0.06930351048138145,
+        "misconduct": 0.9938759864084273,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.75,
+        "welfare": -0.8123425438418279,
+        "prediction_mse": 0.06920918347542768,
+        "misconduct": 0.9938759864084273,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.76,
+        "welfare": -0.8194253317108589,
+        "prediction_mse": 0.06901614114087193,
+        "misconduct": 0.9938759864084273,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.77,
+        "welfare": -0.7345476753837565,
+        "prediction_mse": 0.07052206336090756,
+        "misconduct": 0.9837238302800069,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.78,
+        "welfare": -0.7451205168853969,
+        "prediction_mse": 0.07023818117012594,
+        "misconduct": 0.9837238302800069,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.79,
+        "welfare": -0.7562810900810881,
+        "prediction_mse": 0.06980945469883101,
+        "misconduct": 0.9837238302800069,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.8,
+        "welfare": -0.7675493756997427,
+        "prediction_mse": 0.06929390289087581,
+        "misconduct": 0.9837238302800069,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.81,
+        "welfare": -0.7009040909703816,
+        "prediction_mse": 0.0693454964989324,
+        "misconduct": 0.9735716741515865,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.8200000000000001,
+        "welfare": -0.6253186404757465,
+        "prediction_mse": 0.06830789680461376,
+        "misconduct": 0.9293524679911539,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.8300000000000001,
+        "welfare": -0.4736071911907456,
+        "prediction_mse": 0.06608718181441725,
+        "misconduct": 0.7367492250224039,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.84,
+        "welfare": -0.41200802262081315,
+        "prediction_mse": 0.06445689264044922,
+        "misconduct": 0.6925300188619713,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.85,
+        "welfare": -0.26504204232162965,
+        "prediction_mse": 0.06158911265588967,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.86,
+        "welfare": -0.2924785794859366,
+        "prediction_mse": 0.05976064890234092,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.87,
+        "welfare": -0.3219469557510695,
+        "prediction_mse": 0.05757631393140177,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.88,
+        "welfare": -0.3494107985342729,
+        "prediction_mse": 0.055445089708177756,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.89,
+        "welfare": -0.3705365213329729,
+        "prediction_mse": 0.05327583897607815,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.9,
+        "welfare": -0.38739890327162363,
+        "prediction_mse": 0.051805817995254896,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.91,
+        "welfare": -0.4106930715495835,
+        "prediction_mse": 0.05007222708403327,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.92,
+        "welfare": -0.40560760900422954,
+        "prediction_mse": 0.05008282497229438,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.93,
+        "welfare": -0.4252422249842433,
+        "prediction_mse": 0.04875903719642347,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.9400000000000001,
+        "welfare": -0.4445547901076521,
+        "prediction_mse": 0.04771111643601397,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.9500000000000001,
+        "welfare": -0.45373000087551524,
+        "prediction_mse": 0.048942655623427124,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.96,
+        "welfare": -0.47339004867047907,
+        "prediction_mse": 0.04835655452090851,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.97,
+        "welfare": -0.4737936304785706,
+        "prediction_mse": 0.04875342775218033,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.98,
+        "welfare": -0.4930524715004907,
+        "prediction_mse": 0.048527120031105986,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      },
+      {
+        "value": 0.99,
+        "welfare": -0.48152689604834825,
+        "prediction_mse": 0.04834175461905831,
+        "misconduct": 0.4999267758932214,
+        "repeat": 0.0
+      }
+    ]
+  },
+  "streak_profile": [
+    {
+      "m": 1,
+      "welfare": -0.26504204232162965,
+      "misconduct": 0.4999267758932214,
+      "repeat": 0.0
+    },
+    {
+      "m": 2,
+      "welfare": -0.26504204232162965,
+      "misconduct": 0.4999267758932214,
+      "repeat": 0.0
+    },
+    {
+      "m": 3,
+      "welfare": -0.26504204232162965,
+      "misconduct": 0.4999267758932214,
+      "repeat": 0.0
+    },
+    {
+      "m": 4,
+      "welfare": -0.26504204232162965,
+      "misconduct": 0.4999267758932214,
+      "repeat": 0.0
+    },
+    {
+      "m": 5,
+      "welfare": -0.26504204232162965,
+      "misconduct": 0.4999267758932214,
+      "repeat": 0.0
+    },
+    {
+      "m": 6,
+      "welfare": -0.26504204232162965,
+      "misconduct": 0.4999267758932214,
+      "repeat": 0.0
+    }
+  ],
+  "two_state_slice": [
+    {
+      "phi_clean": 0.0,
+      "phi_nonclean": 0.0,
+      "welfare": -2.764286522843741
+    },
+    {
+      "phi_clean": 0.0,
+      "phi_nonclean": 0.09,
+      "welfare": -2.8840322866492634
+    },
+    {
+      "phi_clean": 0.0,
+      "phi_nonclean": 0.18,
+      "welfare": -2.77370498829925
+    },
+    {
+      "phi_clean": 0.0,
+      "phi_nonclean": 0.27,
+      "welfare": -2.869364173140109
+    },
+    {
+      "phi_clean": 0.0,
+      "phi_nonclean": 0.36,
+      "welfare": -1.9795105883709745
+    },
+    {
+      "phi_clean": 0.0,
+      "phi_nonclean": 0.44999999999999996,
+      "welfare": -2.018767295359882
+    },
+    {
+      "phi_clean": 0.0,
+      "phi_nonclean": 0.54,
+      "welfare": -1.8169146504140725
+    },
+    {
+      "phi_clean": 0.0,
+      "phi_nonclean": 0.63,
+      "welfare": -1.3337526726155038
+    },
+    {
+      "phi_clean": 0.0,
+      "phi_nonclean": 0.72,
+      "welfare": -1.1349958021084183
+    },
+    {
+      "phi_clean": 0.0,
+      "phi_nonclean": 0.8099999999999999,
+      "welfare": -0.7808085740712858
+    },
+    {
+      "phi_clean": 0.0,
+      "phi_nonclean": 0.8999999999999999,
+      "welfare": -0.4283804163854596
+    },
+    {
+      "phi_clean": 0.0,
+      "phi_nonclean": 0.99,
+      "welfare": -0.41563738709311
+    },
+    {
+      "phi_clean": 0.09,
+      "phi_nonclean": 0.0,
+      "welfare": -2.7640960081620993
+    },
+    {
+      "phi_clean": 0.09,
+      "phi_nonclean": 0.09,
+      "welfare": -2.883879487744681
+    },
+    {
+      "phi_clean": 0.09,
+      "phi_nonclean": 0.18,
+      "welfare": -2.7735530529668346
+    },
+    {
+      "phi_clean": 0.09,
+      "phi_nonclean": 0.27,
+      "welfare": -2.869248658670142
+    },
+    {
+      "phi_clean": 0.09,
+      "phi_nonclean": 0.36,
+      "welfare": -1.9793248746694037
+    },
+    {
+      "phi_clean": 0.09,
+      "phi_nonclean": 0.44999999999999996,
+      "welfare": -2.018521192723898
+    },
+    {
+      "phi_clean": 0.09,
+      "phi_nonclean": 0.54,
+      "welfare": -1.8167152207516106
+    },
+    {
+      "phi_clean": 0.09,
+      "phi_nonclean": 0.63,
+      "welfare": -1.3335867630525513
+    },
+    {
+      "phi_clean": 0.09,
+      "phi_nonclean": 0.72,
+      "welfare": -1.1349624627897903
+    },
+    {
+      "phi_clean": 0.09,
+      "phi_nonclean": 0.8099999999999999,
+      "welfare": -0.7808490030309928
+    },
+    {
+      "phi_clean": 0.09,
+      "phi_nonclean": 0.8999999999999999,
+      "welfare": -0.42870440776612745
+    },
+    {
+      "phi_clean": 0.09,
+      "phi_nonclean": 0.99,
+      "welfare": -0.4180238431070749
+    },
+    {
+      "phi_clean": 0.18,
+      "phi_nonclean": 0.0,
+      "welfare": -2.763935050771094
+    },
+    {
+      "phi_clean": 0.18,
+      "phi_nonclean": 0.09,
+      "welfare": -2.883758590643058
+    },
+    {
+      "phi_clean": 0.18,
+      "phi_nonclean": 0.18,
+      "welfare": -2.7734338383223296
+    },
+    {
+      "phi_clean": 0.18,
+      "phi_nonclean": 0.27,
+      "welfare": -2.869167477985062
+    },
+    {
+      "phi_clean": 0.18,
+      "phi_nonclean": 0.36,
+      "welfare": -1.9791716264448431
+    },
+    {
+      "phi_clean": 0.18,
+      "phi_nonclean": 0.44999999999999996,
+      "welfare": -2.0183480325446075
+    },
+    {
+      "phi_clean": 0.18,
+      "phi_nonclean": 0.54,
+      "welfare": -1.8165890126188367
+    },
+    {
+      "phi_clean": 0.18,
+      "phi_nonclean": 0.63,
+      "welfare": -1.333493943326163
+    },
+    {
+      "phi_clean": 0.18,
+      "phi_nonclean": 0.72,
+      "welfare": -1.1350454724913124
+    },
+    {
+      "phi_clean": 0.18,
+      "phi_nonclean": 0.8099999999999999,
+      "welfare": -0.7810451449811614
+    },
+    {
+      "phi_clean": 0.18,
+      "phi_nonclean": 0.8999999999999999,
+      "welfare": -0.4293535703073413
+    },
+    {
+      "phi_clean": 0.18,
+      "phi_nonclean": 0.99,
+      "welfare": -0.4222409438585644
+    },
+    {
+      "phi_clean": 0.27,
+      "phi_nonclean": 0.0,
+      "welfare": -2.763814610693547
+    },
+    {
+      "phi_clean": 0.27,
+      "phi_nonclean": 0.09,
+      "welfare": -2.883679178253487
+    },
+    {
+      "phi_clean": 0.27,
+      "phi_nonclean": 0.18,
+      "welfare": -2.773356540767181
+    },
+    {
+      "phi_clean": 0.27,
+      "phi_nonclean": 0.27,
+      "welfare": -2.8691291297912724
+    },
+    {
+      "phi_clean": 0.27,
+      "phi_nonclean": 0.36,
+      "welfare": -1.9790598376653485
+    },
+    {
+      "phi_clean": 0.27,
+      "phi_nonclean": 0.44999999999999996,
+      "welfare": -2.01826513045923
+    },
+    {
+      "phi_clean": 0.27,
+      "phi_nonclean": 0.54,
+      "welfare": -1.8165529448492679
+    },
+    {
+      "phi_clean": 0.27,
+      "phi_nonclean": 0.63,
+      "welfare": -1.3334905901797263
+    },
+    {
+      "phi_clean": 0.27,
+      "phi_nonclean": 0.72,
+      "welfare": -1.1352697837905397
+    },
+    {
+      "phi_clean": 0.27,
+      "phi_nonclean": 0.8099999999999999,
+      "welfare": -0.7814305780483352
+    },
+    {
+      "phi_clean": 0.27,
+      "phi_nonclean": 0.8999999999999999,
+      "welfare": -0.4304028588068501
+    },
+    {
+      "phi_clean": 0.27,
+      "phi_nonclean": 0.99,
+      "welfare": -0.4289403351595608
+    },
+    {
+      "phi_clean": 0.36,
+      "phi_nonclean": 0.0,
+      "welfare": -2.7637446509632966
+    },
+    {
+      "phi_clean": 0.36,
+      "phi_nonclean": 0.09,
+      "welfare": -2.883649602000008
+    },
+    {
+      "phi_clean": 0.36,
+      "phi_nonclean": 0.18,
+      "welfare": -2.7733290134202107
+    },
+    {
+      "phi_clean": 0.36,
+      "phi_nonclean": 0.27,
+      "welfare": -2.8691406641218666
+    },
+    {
+      "phi_clean": 0.36,
+      "phi_nonclean": 0.36,
+      "welfare": -1.978997057711719
+    },
+    {
+      "phi_clean": 0.36,
+      "phi_nonclean": 0.44999999999999996,
+      "welfare": -2.018287382460925
+    },
+    {
+      "phi_clean": 0.36,
+      "phi_nonclean": 0.54,
+      "welfare": -1.816621468176748
+    },
+    {
+      "phi_clean": 0.36,
+      "phi_nonclean": 0.63,
+      "welfare": -1.3335905559161425
+    },
+    {
+      "phi_clean": 0.36,
+      "phi_nonclean": 0.72,
+      "welfare": -1.1356573532323668
+    },
+    {
+      "phi_clean": 0.36,
+      "phi_nonclean": 0.8099999999999999,
+      "welfare": -0.7820358749558197
+    },
+    {
+      "phi_clean": 0.36,
+      "phi_nonclean": 0.8999999999999999,
+      "welfare": -0.431929479025083
+    },
+    {
+      "phi_clean": 0.36,
+      "phi_nonclean": 0.99,
+      "welfare": -0.43902717101259287
+    },
+    {
+      "phi_clean": 0.44999999999999996,
+      "phi_nonclean": 0.0,
+      "welfare": -2.7637325297203823
+    },
+    {
+      "phi_clean": 0.44999999999999996,
+      "phi_nonclean": 0.09,
+      "welfare": -2.8836754961610995
+    },
+    {
+      "phi_clean": 0.44999999999999996,
+      "phi_nonclean": 0.18,
+      "welfare": -2.7733562968008174
+    },
+    {
+      "phi_clean": 0.44999999999999996,
+      "phi_nonclean": 0.27,
+      "welfare": -2.8692062525618525
+    },
+    {
+      "phi_clean": 0.44999999999999996,
+      "phi_nonclean": 0.36,
+      "welfare": -1.9789879459497084
+    },
+    {
+      "phi_clean": 0.44999999999999996,
+      "phi_nonclean": 0.44999999999999996,
+      "welfare": -2.0184246426029366
+    },
+    {
+      "phi_clean": 0.44999999999999996,
+      "phi_nonclean": 0.54,
+      "welfare": -1.816803956592791
+    },
+    {
+      "phi_clean": 0.44999999999999996,
+      "phi_nonclean": 0.63,
+      "welfare": -1.3338025768967299
+    },
+    {
+      "phi_clean": 0.44999999999999996,
+      "phi_nonclean": 0.72,
+      "welfare": -1.1362235852170375
+    },
+    {
+      "phi_clean": 0.44999999999999996,
+      "phi_nonclean": 0.8099999999999999,
+      "welfare": -0.7828843571630635
+    },
+    {
+      "phi_clean": 0.44999999999999996,
+      "phi_nonclean": 0.8999999999999999,
+      "welfare": -0.4340087879336995
+    },
+    {
+      "phi_clean": 0.44999999999999996,
+      "phi_nonclean": 0.99,
+      "welfare": -0.45380848804883317
+    },
+    {
+      "phi_clean": 0.54,
+      "phi_nonclean": 0.0,
+      "welfare": -2.7637813782985443
+    },
+    {
+      "phi_clean": 0.54,
+      "phi_nonclean": 0.09,
+      "welfare": -2.883758335227723
+    },
+    {
+      "phi_clean": 0.54,
+      "phi_nonclean": 0.18,
+      "welfare": -2.773439213193926
+    },
+    {
+      "phi_clean": 0.54,
+      "phi_nonclean": 0.27,
+      "welfare": -2.8693258456278996
+    },
+    {
+      "phi_clean": 0.54,
+      "phi_nonclean": 0.36,
+      "welfare": -1.9790329192222944
+    },
+    {
+      "phi_clean": 0.54,
+      "phi_nonclean": 0.44999999999999996,
+      "welfare": -2.0186792723968794
+    },
+    {
+      "phi_clean": 0.54,
+      "phi_nonclean": 0.54,
+      "welfare": -1.8171022819145675
+    },
+    {
+      "phi_clean": 0.54,
+      "phi_nonclean": 0.63,
+      "welfare": -1.3341278740099574
+    },
+    {
+      "phi_clean": 0.54,
+      "phi_nonclean": 0.72,
+      "welfare": -1.1369740645777595
+    },
+    {
+      "phi_clean": 0.54,
+      "phi_nonclean": 0.8099999999999999,
+      "welfare": -0.7839883089380832
+    },
+    {
+      "phi_clean": 0.54,
+      "phi_nonclean": 0.8999999999999999,
+      "welfare": -0.4367124818467997
+    },
+    {
+      "phi_clean": 0.54,
+      "phi_nonclean": 0.99,
+      "welfare": -0.4752825160768391
+    },
+    {
+      "phi_clean": 0.63,
+      "phi_nonclean": 0.0,
+      "welfare": -2.7638888524220615
+    },
+    {
+      "phi_clean": 0.63,
+      "phi_nonclean": 0.09,
+      "welfare": -2.8838944272864695
+    },
+    {
+      "phi_clean": 0.63,
+      "phi_nonclean": 0.18,
+      "welfare": -2.77357342870123
+    },
+    {
+      "phi_clean": 0.63,
+      "phi_nonclean": 0.27,
+      "welfare": -2.8694943275294205
+    },
+    {
+      "phi_clean": 0.63,
+      "phi_nonclean": 0.36,
+      "welfare": -1.979127307772739
+    },
+    {
+      "phi_clean": 0.63,
+      "phi_nonclean": 0.44999999999999996,
+      "welfare": -2.0190445116003826
+    },
+    {
+      "phi_clean": 0.63,
+      "phi_nonclean": 0.54,
+      "welfare": -1.8175092226804308
+    },
+    {
+      "phi_clean": 0.63,
+      "phi_nonclean": 0.63,
+      "welfare": -1.3345585982885049
+    },
+    {
+      "phi_clean": 0.63,
+      "phi_nonclean": 0.72,
+      "welfare": -1.137902329906367
+    },
+    {
+      "phi_clean": 0.63,
+      "phi_nonclean": 0.8099999999999999,
+      "welfare": -0.7853464088762717
+    },
+    {
+      "phi_clean": 0.63,
+      "phi_nonclean": 0.8999999999999999,
+      "welfare": -0.44010958623283275
+    },
+    {
+      "phi_clean": 0.63,
+      "phi_nonclean": 0.99,
+      "welfare": -0.5066831411167251
+    },
+    {
+      "phi_clean": 0.72,
+      "phi_nonclean": 0.0,
+      "welfare": -2.7640465451386644
+    },
+    {
+      "phi_clean": 0.72,
+      "phi_nonclean": 0.09,
+      "welfare": -2.884074612559608
+    },
+    {
+      "phi_clean": 0.72,
+      "phi_nonclean": 0.18,
+      "welfare": -2.773749262661632
+    },
+    {
+      "phi_clean": 0.72,
+      "phi_nonclean": 0.27,
+      "welfare": -2.8697014469405273
+    },
+    {
+      "phi_clean": 0.72,
+      "phi_nonclean": 0.36,
+      "welfare": -1.9792613038610418
+    },
+    {
+      "phi_clean": 0.72,
+      "phi_nonclean": 0.44999999999999996,
+      "welfare": -2.019503815766983
+    },
+    {
+      "phi_clean": 0.72,
+      "phi_nonclean": 0.54,
+      "welfare": -1.8180078470864138
+    },
+    {
+      "phi_clean": 0.72,
+      "phi_nonclean": 0.63,
+      "welfare": -1.3350772626492553
+    },
+    {
+      "phi_clean": 0.72,
+      "phi_nonclean": 0.72,
+      "welfare": -1.1389883188615635
+    },
+    {
+      "phi_clean": 0.72,
+      "phi_nonclean": 0.8099999999999999,
+      "welfare": -0.7869411741287154
+    },
+    {
+      "phi_clean": 0.72,
+      "phi_nonclean": 0.8999999999999999,
+      "welfare": -0.44426345534751516
+    },
+    {
+      "phi_clean": 0.72,
+      "phi_nonclean": 0.99,
+      "welfare": -0.5534033582314193
+    },
+    {
+      "phi_clean": 0.8099999999999999,
+      "phi_nonclean": 0.0,
+      "welfare": -2.764240026510411
+    },
+    {
+      "phi_clean": 0.8099999999999999,
+      "phi_nonclean": 0.09,
+      "welfare": -2.8842845512934505
+    },
+    {
+      "phi_clean": 0.8099999999999999,
+      "phi_nonclean": 0.18,
+      "welfare": -2.7739521291136366
+    },
+    {
+      "phi_clean": 0.8099999999999999,
+      "phi_nonclean": 0.27,
+      "welfare": -2.8699323893700113
+    },
+    {
+      "phi_clean": 0.8099999999999999,
+      "phi_nonclean": 0.36,
+      "welfare": -1.9794205727895489
+    },
+    {
+      "phi_clean": 0.8099999999999999,
+      "phi_nonclean": 0.44999999999999996,
+      "welfare": -2.0200301541977153
+    },
+    {
+      "phi_clean": 0.8099999999999999,
+      "phi_nonclean": 0.54,
+      "welfare": -1.8185708464496215
+    },
+    {
+      "phi_clean": 0.8099999999999999,
+      "phi_nonclean": 0.63,
+      "welfare": -1.3356561376131193
+    },
+    {
+      "phi_clean": 0.8099999999999999,
+      "phi_nonclean": 0.72,
+      "welfare": -1.1401947750377748
+    },
+    {
+      "phi_clean": 0.8099999999999999,
+      "phi_nonclean": 0.8099999999999999,
+      "welfare": -0.7887311182374416
+    },
+    {
+      "phi_clean": 0.8099999999999999,
+      "phi_nonclean": 0.8999999999999999,
+      "welfare": -0.4491994065553913
+    },
+    {
+      "phi_clean": 0.8099999999999999,
+      "phi_nonclean": 0.99,
+      "welfare": -0.623973729237966
+    },
+    {
+      "phi_clean": 0.8999999999999999,
+      "phi_nonclean": 0.0,
+      "welfare": -2.7644493803857584
+    },
+    {
+      "phi_clean": 0.8999999999999999,
+      "phi_nonclean": 0.09,
+      "welfare": -2.8845053091437816
+    },
+    {
+      "phi_clean": 0.8999999999999999,
+      "phi_nonclean": 0.18,
+      "welfare": -2.7741632869027075
+    },
+    {
+      "phi_clean": 0.8999999999999999,
+      "phi_nonclean": 0.27,
+      "welfare": -2.870168621708447
+    },
+    {
+      "phi_clean": 0.8999999999999999,
+      "phi_nonclean": 0.36,
+      "welfare": -1.9795871555872246
+    },
+    {
+      "phi_clean": 0.8999999999999999,
+      "phi_nonclean": 0.44999999999999996,
+      "welfare": -2.020583948184334
+    },
+    {
+      "phi_clean": 0.8999999999999999,
+      "phi_nonclean": 0.54,
+      "welfare": -1.8191584870659132
+    },
+    {
+      "phi_clean": 0.8999999999999999,
+      "phi_nonclean": 0.63,
+      "welfare": -1.3362552847376568
+    },
+    {
+      "phi_clean": 0.8999999999999999,
+      "phi_nonclean": 0.72,
+      "welfare": -1.1414581230755814
+    },
+    {
+      "phi_clean": 0.8999999999999999,
+      "phi_nonclean": 0.8099999999999999,
+      "welfare": -0.7906299493543028
+    },
+    {
+      "phi_clean": 0.8999999999999999,
+      "phi_nonclean": 0.8999999999999999,
+      "welfare": -0.4547838285787578
+    },
+    {
+      "phi_clean": 0.8999999999999999,
+      "phi_nonclean": 0.99,
+      "welfare": -0.7273120100021225
+    },
+    {
+      "phi_clean": 0.99,
+      "phi_nonclean": 0.0,
+      "welfare": -2.764651056393891
+    },
+    {
+      "phi_clean": 0.99,
+      "phi_nonclean": 0.09,
+      "welfare": -2.8847148532410953
+    },
+    {
+      "phi_clean": 0.99,
+      "phi_nonclean": 0.18,
+      "welfare": -2.7743614018145126
+    },
+    {
+      "phi_clean": 0.99,
+      "phi_nonclean": 0.27,
+      "welfare": -2.8703894340234064
+    },
+    {
+      "phi_clean": 0.99,
+      "phi_nonclean": 0.36,
+      "welfare": -1.979741068512209
+    },
+    {
+      "phi_clean": 0.99,
+      "phi_nonclean": 0.44999999999999996,
+      "welfare": -2.0211120719409688
+    },
+    {
+      "phi_clean": 0.99,
+      "phi_nonclean": 0.54,
+      "welfare": -1.8197176660478984
+    },
+    {
+      "phi_clean": 0.99,
+      "phi_nonclean": 0.63,
+      "welfare": -1.3368217286441464
+    },
+    {
+      "phi_clean": 0.99,
+      "phi_nonclean": 0.72,
+      "welfare": -1.1426786477567206
+    },
+    {
+      "phi_clean": 0.99,
+      "phi_nonclean": 0.8099999999999999,
+      "welfare": -0.7924782636907931
+    },
+    {
+      "phi_clean": 0.99,
+      "phi_nonclean": 0.8999999999999999,
+      "welfare": -0.46045555046100123
+    },
+    {
+      "phi_clean": 0.99,
+      "phi_nonclean": 0.99,
+      "welfare": -0.8521007023000142
+    }
+  ],
+  "horizon_robustness": [
+    {
+      "horizon": 3,
+      "fixed_policy": {
+        "phi_clean": 0.99,
+        "phi_adverse": 0.99,
+        "phi_rehab": 0.99,
+        "good_streak_required": 1
+      },
+      "adaptive_policy": {
+        "phi_clean": 0.0,
+        "phi_adverse": 0.99,
+        "phi_rehab": 0.0,
+        "good_streak_required": 1
+      },
+      "value": 0.13654310147062915,
+      "misconduct": 0.18814998915663886,
+      "repeat": 0.0
+    },
+    {
+      "horizon": 4,
+      "fixed_policy": {
+        "phi_clean": 0.85,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      },
+      "adaptive_policy": {
+        "phi_clean": 0.0,
+        "phi_adverse": 0.99,
+        "phi_rehab": 0.0,
+        "good_streak_required": 1
+      },
+      "value": 0.1989061211681352,
+      "misconduct": 0.23355697856075422,
+      "repeat": 0.0
+    },
+    {
+      "horizon": 6,
+      "fixed_policy": {
+        "phi_clean": 0.85,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      },
+      "adaptive_policy": {
+        "phi_clean": 0.0,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      },
+      "value": 0.0158953107945633,
+      "misconduct": 0.4999267758932214,
+      "repeat": 0.0
+    },
+    {
+      "horizon": 8,
+      "fixed_policy": {
+        "phi_clean": 0.85,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      },
+      "adaptive_policy": {
+        "phi_clean": 0.0,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.99,
+        "good_streak_required": 1
+      },
+      "value": 0.13903324874127587,
+      "misconduct": 0.49999614034243184,
+      "repeat": 0.0
+    },
+    {
+      "horizon": 12,
+      "fixed_policy": {
+        "phi_clean": 0.85,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      },
+      "adaptive_policy": {
+        "phi_clean": 0.0,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.99,
+        "good_streak_required": 1
+      },
+      "value": 0.1578800544762592,
+      "misconduct": 0.49999998927646033,
+      "repeat": 0.0
+    },
+    {
+      "horizon": 20,
+      "fixed_policy": {
+        "phi_clean": 0.85,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      },
+      "adaptive_policy": {
+        "phi_clean": 0.0,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.99,
+        "good_streak_required": 1
+      },
+      "value": 0.20148509044272822,
+      "misconduct": 0.49999999999991723,
+      "repeat": 0.0
+    }
+  ],
+  "action_grid_convergence": [
+    {
+      "effort_grid": 101,
+      "policy": {
+        "phi_clean": 0.0,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      },
+      "welfare": -0.26589012249631305,
+      "value": 0.0158953107945633
+    },
+    {
+      "effort_grid": 201,
+      "policy": {
+        "phi_clean": 0.0,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      },
+      "welfare": -0.26520906159656527,
+      "value": 0.0158953107945633
+    },
+    {
+      "effort_grid": 501,
+      "policy": {
+        "phi_clean": 0.0,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      },
+      "welfare": -0.26556416704582025,
+      "value": 0.0158953107945633
+    },
+    {
+      "effort_grid": 1001,
+      "policy": {
+        "phi_clean": 0.0,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      },
+      "welfare": -0.2652427552424925,
+      "value": 0.01589531079456319
+    }
+  ],
+  "repeat_misconduct_cases": [
+    {
+      "horizon": 12,
+      "policy": {
+        "phi_clean": 0,
+        "phi_adverse": 0,
+        "phi_rehab": 0,
+        "good_streak_required": 1
+      },
+      "welfare": -2.1073617067851624,
+      "misconduct": 5.886662841023531,
+      "repeat": 4.886662841023573
+    },
+    {
+      "horizon": 12,
+      "policy": {
+        "phi_clean": 0,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      },
+      "welfare": -0.25392133557422114,
+      "misconduct": 1.4520719545399667,
+      "repeat": 0.4520736951489854
+    },
+    {
+      "horizon": 20,
+      "policy": {
+        "phi_clean": 0,
+        "phi_adverse": 0,
+        "phi_rehab": 0,
+        "good_streak_required": 1
+      },
+      "welfare": -3.0220955350158616,
+      "misconduct": 9.10168804234288,
+      "repeat": 8.101688042340236
+    },
+    {
+      "horizon": 20,
+      "policy": {
+        "phi_clean": 0,
+        "phi_adverse": 0.85,
+        "phi_rehab": 0.85,
+        "good_streak_required": 1
+      },
+      "welfare": -0.2561344760392158,
+      "misconduct": 1.9642457925384806,
+      "repeat": 0.9642457925503705
+    }
+  ],
+  "normalization": {
+    "fixed_welfare": -0.28093735311619306,
+    "adaptive_welfare": -0.26504204232162965,
+    "absolute_gain": 0.01589531079456341,
+    "gain_per_agent_period": 0.0026492184657605686,
+    "feasible_welfare_range": 2.4996090140722615,
+    "gain_share_of_range": 0.006359118848218352,
+    "mse_absolute_gain": 0.005977669690631675,
+    "mse_percent_gain": 8.847053956150738
+  }
+}

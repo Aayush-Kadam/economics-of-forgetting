@@ -1,0 +1,182 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,graphicx,natbib,hyperref,setspace}
+\graphicspath{{../outputs/figures/}}
+\onehalfspacing
+\newtheorem{proposition}{Proposition}
+\title{Persistent Records and Rehabilitation Incentives}
+\author{Aayush Kadam}
+\date{September 2026 --- Working Paper, External Review Version v0.1.0}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Past behavior can predict future behavior and discipline current actions. When agents can invest in changing their future productive state, however, a persistent public record also changes the return to that investment. I study a finite-horizon dynamic control problem that separates persistence of an institutional score from persistence of underlying quality. On a nonempty region, greater score persistence strengthens ex ante discipline while reducing productive effort after an adverse history. Records can consequently produce differences in future quality rather than merely reveal them: even with zero intrinsic quality persistence, different records generate different next-period quality whenever they induce different effort. Repeated score-dependent effort can propagate these differences over a finite horizon. The feedback is regional. Depending on the local geometry of opportunity, an adverse record can suppress or stimulate effort, producing self-confirming and self-correcting regions. A secondary numerical exercise finds that lifecycle-contingent persistence can outperform a constant rule in parts of parameter space, but gains can be small and direct punishment can substitute for memory. The paper therefore establishes neither a universal case for forgetting nor a universal optimal record duration.
+\end{abstract}
+
+\section{Introduction}
+
+Past behavior is useful because it forecasts future behavior and can discipline present actions. But a record is not purely informational when the person or firm being recorded can invest in changing future outcomes. Persistent adverse information lowers or delays future opportunity, changing the return to productive rehabilitation. The record can then help produce the future fundamentals it is used to forecast.
+
+This paper studies that mechanism in a deliberately transparent setting. An institutional score $R_t$ summarizes public history, while a distinct productive state $x_t$ evolves with intrinsic persistence $\rho$ and productive effort $e_t$. The score persists at rate $\phi$. Opportunity is an increasing reduced-form function $A(R_t)$. A clean agent may take a privately beneficial harmful action; after an adverse event, the agent may invest in future quality. The environment is a finite-horizon control problem, not a Bayesian or competitive-market equilibrium.
+
+The first contribution is a regional lifecycle-asymmetry result. Increasing the same score-persistence parameter can raise the expected consequence of misconduct before an adverse event and reduce the marginal return to productive effort afterward. The result holds globally for the interior linear-opportunity rehabilitation benchmark and on a characterized region under smooth nonlinear opportunity. It is not a global monotonicity claim.
+
+The second contribution separates institutional from intrinsic persistence. When two agents have identical current fundamentals but different public records, record-dependent effort can generate different next-period quality. This channel operates even at $\rho=0$. Iterating the transition shows exactly how future quality gaps decompose into intrinsic carryover and a distributed lag of effort gaps. At zero intrinsic persistence, multi-period differences require repeated record-dependent effort.
+
+The regional qualification is economically important. Under smooth opportunity, the response of effort to the inherited record depends locally on opportunity curvature. A worse record can lower effort and become self-confirming, but it can also raise compensating effort and become self-correcting. The model therefore does not imply that stigma is globally self-fulfilling.
+
+The paper's design analysis is secondary. A finite computational exercise compares one constant persistence rate with a clean/adverse lifecycle rule. State contingency often has positive value in the tested design, but the benchmark gain is modest, some environments yield negligible gains, and costless direct sanctions can outperform memory alone. These results are reported as an appendix illustration rather than as a universal policy prescription.
+
+\section{Related literature}
+
+The mechanism sits at the intersection of reputation, endogenous quality, limited records, and dynamic sanctions. \citet{boardmeyer2013} study reputation when firms invest in endogenous persistent quality; \citet{bohren2024} shows how a persistent payoff-relevant state creates dynamic moral-hazard incentives. Those papers establish that reputation and persistence can affect real investment. The narrower object here is an institutional score-persistence parameter with opposed pre-event discipline and post-event productive-effort effects.
+
+Work on limited and fading records shows that memory changes reputational incentives. \citet{liuskrzypacz2014} analyze limited records and reputation bubbles, while \citet{sperisen2018} compares bounded and fading memory. \citet{bhaskarthomas2019} show how bounded-memory punishment states sustain community enforcement. \citet{elulgottardi2015} analyze regulated forgetting in credit markets. These contributions preclude a novelty claim for bounded memory, temporary punishment, or welfare-improving forgetting themselves.
+
+Record erasure and direct instruments provide additional close benchmarks. \citet{pei2026} studies strategic deletion of records. \citet{jovanovic2021} models product recalls and shows that a recall tax with a subsidy can attain the first best in that environment. The analysis below consequently treats memory as a constrained institutional instrument rather than a uniquely optimal sanction.
+
+The distinction from this literature is modest and specific: the same score persistence governs a pre-event deterrence margin and a post-event investment margin in a model that separates score memory from underlying-state memory. The paper does not claim priority for reputation-dependent investment, fading memory, forgiveness, or state-contingent punishment.
+
+\section{Environment}
+
+Time is discrete and finite, $t=0,\ldots,T$. The public state is $(R_t,x_t,z_t)$, where $R_t$ is an institutional score, $x_t$ is underlying productive quality, and $z_t\in\{C,A\}$ denotes a clean or adverse lifecycle state. The score is not assumed to be a Bayesian posterior.
+
+An institution maps the score into current opportunity $A(R_t)$, where $A$ is weakly increasing. In an adverse state the agent chooses productive effort $e_t\in[0,1]$ at cost $\kappa e_t^2/2$. Quality and the public signal evolve according to
+\begin{align}
+x_{t+1}&=\rho x_t+\alpha e_t+\varepsilon_{t+1},\\
+y_{t+1}&=x_{t+1}+\eta_{t+1},\\
+R_{t+1}&=\phi R_t+(1-\phi)y_{t+1}.
+\end{align}
+The parameters $\rho$ and $\phi$ are conceptually different. The first carries true quality forward; the second carries the institutional record forward. The parameter $\alpha$ converts effort into future quality.
+
+The canonical within-period order is state observation, opportunity assignment, lifecycle-specific action, flow payoff, quality transition, signal, and score update. The opportunity schedule is reduced form. Short-lived market participants and belief consistency are not solved, so the model is a dynamic control problem rather than a Markov perfect equilibrium.
+
+\section{Recovery and productive rehabilitation}
+
+Suppose an adverse score $R_0<\bar R$ is followed by a constant favorable signal $y_G>\bar R$. The score path is
+\[
+R_t=y_G+\phi^t(R_0-y_G),
+\]
+and the continuous crossing time is
+\[
+n(\phi)=\frac{\log[(y_G-\bar R)/(y_G-R_0)]}{\log\phi}.
+\]
+For $0<\phi<1$, $n'(\phi)>0$. More persistent records delay recovery. In discrete time the first crossing is the corresponding weakly increasing integer step function.
+
+For the productive-effort benchmark, let $x_1=\rho x+\alpha e$, $m=\phi^H$, and $r=mR+(1-m)x_1$. The adverse agent solves
+\[
+\max_{e\in[0,1]}\;\beta^H V A(r)-\frac{\kappa e^2}{2}.
+\]
+With an unclipped linear schedule $A(r)=a+br$, an interior solution is
+\[
+e^*(\phi)=\frac{\beta^H Vb\alpha(1-\phi^H)}{\kappa}.
+\]
+Thus persistence reduces productive effort whenever the solution is interior. Intuitively, placing more weight on the inherited adverse score reduces the effect of new quality on future opportunity.
+
+For a twice differentiable increasing schedule, implicit differentiation gives
+\begin{equation}
+\frac{\partial e^*}{\partial\phi}=
+\frac{\beta^H V\alpha H\phi^{H-1}\{-A'(r)+(1-m)A''(r)(R-x_1)\}}
+{\kappa-\beta^H V[\alpha(1-m)]^2A''(r)}.
+\label{eq:effortphi}
+\end{equation}
+At a strict interior optimum the denominator is positive. The first term in braces is attenuation of the new signal; the second relocates the agent along a curved opportunity schedule. Their sum need not have a common sign across states.
+
+\section{Lifecycle asymmetry}
+
+Before an adverse event, a clean agent receives private misconduct benefit $b$. Detection occurs with probability $p$ and sends the score to $R_{bad}$. Let the opportunity loss from the induced recovery delay be
+\[
+P(\phi)=V[1-\beta^{n(\phi)}].
+\]
+The agent commits misconduct when $b\geq pP(\phi)$. Because recovery time increases with $\phi$, the threshold rises with persistence. Misconduct therefore weakly falls and falls strictly away from support boundaries.
+
+\begin{proposition}[Lifecycle asymmetry]
+There exists a nonempty open set of clean and adverse states in which an increase in common score persistence $\phi$ strictly reduces misconduct by the clean agent and strictly reduces productive rehabilitation effort by the adverse agent.
+\end{proposition}
+
+\noindent\emph{Proof sketch.} Choose a clean state with an interior misconduct threshold. The preceding recovery argument makes misconduct strictly decreasing in $\phi$. Choose an adverse state with an interior linear-opportunity solution, or a smooth-opportunity state satisfying the strict negative numerator condition in equation \eqref{eq:effortphi}. Both inequalities persist under small parameter perturbations. Complete details are in the appendix.
+
+The proposition is an existence result. Detection can be ineffective or punishment can saturate. Under nonlinear opportunity the relocation term can dominate attenuation and reverse the effort comparative static. The result is therefore a lifecycle tension, not a recommendation for uniformly short records.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=.74\textwidth]{m1_lifecycle_asymmetry.png}
+\caption{A benchmark lifecycle region. Greater persistence reduces both misconduct probability and productive post-event effort. The figure illustrates the proposition; it is not a calibrated policy estimate.}
+\label{fig:lifecycle}
+\end{figure}
+
+\section{Institution-produced future outcomes}
+
+Consider two histories, $A$ and $B$, with the same current quality and common future primitive shocks but different public records. Subtracting their quality laws gives
+\[
+\Delta x_{t+1}=\rho\Delta x_t+\alpha\Delta e_t.
+\]
+Iteration yields the exact identity
+\begin{equation}
+\Delta x_{t+h}=\rho^h\Delta x_t+
+\alpha\sum_{j=0}^{h-1}\rho^{h-1-j}\Delta e_{t+j}.
+\label{eq:gap}
+\end{equation}
+The first term is intrinsic propagation; the second is institutionally mediated behavioral propagation.
+
+\begin{proposition}[Zero intrinsic persistence]
+Set $\rho=0$ and $\alpha>0$. If two public records induce different effort at matched current fundamentals, then they generate different next-period true quality:
+\[
+\Delta x_{t+1}=\alpha\Delta e_t\neq0.
+\]
+At zero intrinsic persistence, a one-time effort difference lasts one period; a quality gap at later dates requires renewed record-dependent effort differences.
+\end{proposition}
+
+The proposition distinguishes a record's predictive content from its consequences. It does not say that all observed score predictiveness is causal, nor that the induced gap is permanent. It says that an institutional record can alter the process generating future quality even when current quality has no mechanical carryover.
+
+\section{Self-confirming and self-correcting regions}
+
+Let the local effort policy be differentiable, $e=e(x,R)$. The zero-shock transition Jacobian for $(x,R)$ is
+\[
+J_t=\begin{pmatrix}
+\rho+\alpha e_x & \alpha e_R\\
+(1-\phi)(\rho+\alpha e_x) & \phi+(1-\phi)\alpha e_R
+\end{pmatrix}.
+\]
+At matched fundamentals, the immediate quality response to a record difference has the sign of $\alpha e_R$. If $e_R>0$, a worse record lowers effort and is locally self-confirming. If $e_R<0$, a worse record raises effort and is locally self-correcting.
+
+In the strict-interior one-investment problem,
+\[
+e_R=\frac{\beta^H V\alpha(1-m)mA''(r)}
+{\kappa-\beta^H V[\alpha(1-m)]^2A''(r)}.
+\]
+Hence the sign follows $A''(r)$. For logistic opportunity the boundary is the inflection point. Action bounds create flat regions, and nonconcavity can require global comparison.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=.72\textwidth]{m1_5_logistic_sign_map.png}
+\caption{Regional effort response under logistic opportunity. Both signs occur; white cells are boundary or flat solutions.}
+\label{fig:regions}
+\end{figure}
+
+This regional structure rejects a global self-fulfilling-stigma theorem. The economic response to an adverse record depends on where the record places the agent on the opportunity schedule and on whether additional effort can move the score through a high-return region.
+
+\section{Discussion and applications}
+
+The model can describe institutional scores in credit, employment, online platforms, or professional records. In each case $R_t$ is a public summary, $A(R_t)$ maps that summary into opportunity, and $e_t$ is an investment that changes future productive capacity. The mapping is illustrative; no empirical calibration or legal prescription is offered.
+
+The reduced-form opportunity schedule is the central limitation. A Bayesian market could infer current quality from both the score and endogenous effort, changing the opportunity map. An infinite-horizon equilibrium could also alter terminal incentives. False adverse signals are especially important because a persistent erroneous record may change the real state it initially measured incorrectly. These extensions require a different model rather than cosmetic robustness checks.
+
+Direct instruments matter for interpretation. If fines, monitoring, or contracts are costless and unconstrained, record persistence need not be the preferred incentive device. Memory design becomes relevant when direct sanctions are legally, informationally, or financially constrained, or when the record serves a genuine screening role. Those constraints are not modeled here and should be objects of future work.
+
+\section{Conclusion}
+
+Public memory has informational and incentive consequences. A record summarizes history, but when opportunity depends on the record and effort changes future quality, the record also changes the return to becoming better. The resulting lifecycle tension is regional: persistence can strengthen discipline before an adverse event while weakening productive effort afterward, yet nonlinear opportunity can reverse the latter effect in other states.
+
+Separating score persistence from intrinsic quality persistence clarifies the mechanism. Even at zero intrinsic persistence, different records can create different next-period fundamentals through effort. Repeated record-dependent choices can propagate those differences, but neither permanence nor globally self-confirming feedback follows.
+
+The analysis does not identify a universal optimal half-life or a general case for forgetting. Its narrower lesson is that a record institution cannot be evaluated solely by how well it summarizes the past when it also changes the production of future outcomes. Empirical identification, Bayesian market responses, infinite-horizon incentives, and design under realistic constraints on direct sanctions remain open.
+
+\appendix
+\input{appendix.tex}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}
